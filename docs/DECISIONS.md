@@ -38,3 +38,15 @@ WhatsApp permanece visível no hero, páginas internas, contato e CTA flutuante,
 
 ## D013 — Não reintroduzir conteúdo sem validação
 Informações do site anterior sobre 1980, Pearson, Programa Bilíngue, Projeto de Vida formal e atividades fixas não retornam à V3 sem confirmação institucional.
+
+## D013 — Imagens editoriais existentes permanecem
+**Decisão:** as imagens produzidas para hero e ciclos continuam no projeto.
+**Motivo:** elas entregam consistência de branding e leitura imediata de cada etapa. As fotos reais entram como prova de autenticidade e vida escolar, não como substituição indiscriminada.
+
+## D014 — Fotografias reais entram onde comprovam a narrativa
+**Decisão:** usar fotos reais em História, Projetos, páginas dos ciclos, Vida Escolar e Contato.
+**Motivo:** aumentar confiança e evidência sem transformar o site em uma galeria desorganizada.
+
+## D015 — Fotos reais otimizadas para web
+**Decisão:** manter originais fora do pacote público e publicar versões WebP responsivas em `assets/real/`.
+**Motivo:** preservar qualidade visual com melhor performance.

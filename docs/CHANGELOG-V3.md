@@ -12,3 +12,15 @@
 - Página Contato com formulário que monta mensagem e abre WhatsApp sem armazenar dados.
 - “Agende uma visita” passa a levar para /contato/#agendar.
 - WhatsApp permanece ação secundária forte.
+
+## V3.1 — Fotografias reais
+- Mantidas todas as imagens editoriais já existentes no hero e nas etapas de ensino.
+- Integradas fotografias reais da escola sem substituir a linguagem visual já aprovada.
+- História: imagem institucional da direção integrada ao painel de 1987.
+- Projetos/Home: mosaico real com apresentação cultural, trabalho de campo e atividade em sala.
+- Fundamental I: registro real de atividade de teatro de sombras.
+- Fundamental II: registro real de convivência/vida escolar.
+- Ensino Médio: registro real de trabalho de campo.
+- Estrutura e Vida Escolar: galeria real com arte, bastidores e convivência.
+- Contato: imagem da direção para humanizar o agendamento de visita.
+- Novos assets convertidos para WebP e versões responsivas de 720/1200 px quando aplicável.
