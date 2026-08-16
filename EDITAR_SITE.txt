@@ -1,4 +1,4 @@
-COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — PRODUCTION FINAL
+COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — V4 PRODUCTION CANDIDATE
 
 CONTATOS / WHATSAPP / TELEFONE / PORTAL / VÍDEO COC
 Abra: js/config.js
@@ -29,3 +29,16 @@ CTAs
 
 IMAGENS DOS CICLOS
 Use fotografia limpa. Não colocar título, logo, ícones ou card dentro da imagem. Texto e botões pertencem ao HTML/CSS.
+
+
+TIPOGRAFIA GLOBAL — V4
+A escala de títulos está centralizada em css/tokens.css nas variáveis --type-*.
+Não definir tamanhos gigantes diretamente em páginas. Ajustes globais devem partir dessas variáveis.
+
+CAPA DO VÍDEO COC
+assets/video/coc-video-cover.webp
+assets/video/coc-video-cover-960.webp
+O iframe do YouTube continua sendo criado somente depois do clique.
+
+MOBILE — NOSSA ESSÊNCIA
+Aprender / Pertencer / Transformar usa layout compacto no mobile. Evite voltar a min-height fixo alto nesses três blocos.

@@ -1,4 +1,2 @@
-COLÉGIO PERINI — PRODUCTION FINAL
-Versão: 4.0.0
+Colégio Perini — V4 Production Candidate
 Data: 2026-08-16
-Destino principal: GitHub Pages — https://periniebambino.github.io/colegioperini/

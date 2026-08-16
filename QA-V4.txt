@@ -1,0 +1,18 @@
+COLÉGIO PERINI — QA V4 PRODUCTION CANDIDATE
+
+HTML: 8
+JS: 4
+ARQUIVOS: 70
+TAMANHO DA PASTA: 4510706 bytes
+ERROS ESTÁTICOS: 0
+
+Nenhum erro estático encontrado.
+
+VALIDAÇÕES VISUAIS FOCADAS
+- Página Estrutura: H1 reduzido e equilibrado em desktop e mobile.
+- Dobra COC: nova capa 16:9 validada em 390px e 1440px.
+- Nossa Essência: Aprender/Pertencer/Transformar transformados em blocos compactos no mobile.
+- Escala tipográfica global aplicada via tokens e overrides de componente.
+
+OBSERVAÇÃO
+A homologação final do comportamento do YouTube e smoke test HTTP dependem do endereço publicado no GitHub Pages.

@@ -1,0 +1,14 @@
+COLÉGIO PERINI — V4 PRODUCTION CANDIDATE
+
+ALTERAÇÕES
+- Escala tipográfica global criada em css/tokens.css e aplicada a Home e páginas internas.
+- H1 de páginas internas reduzidos e padronizados.
+- H2 e títulos de seções padronizados.
+- Títulos de cards/etapas reduzidos para preservar hierarquia.
+- Removido font-size inline da página de Contato.
+- Nova capa premium do vídeo Sistema COC integrada ao player lazy-load.
+- No mobile, Aprender/Pertencer/Transformar deixa de ocupar grandes painéis e vira composição compacta.
+- Arquitetura GitHub Pages, URLs, WhatsApp, formulário e player preservados.
+
+STATUS
+Production Candidate para smoke test publicado.
