@@ -1,6 +1,6 @@
-# Colégio Perini — V3.4 Produção
+# Colégio Perini — V3.5 Release Candidate
 
-Site institucional/comercial estático, responsivo e multipágina do Colégio Perini.
+Site institucional/comercial estático, responsivo e multipágina do Colégio Perini. Esta versão é candidata à produção e deve ser homologada no Preview da Vercel antes do selo Production Final.
 
 ## Rotas
 - `/` — Home institucional/comercial
@@ -36,3 +36,8 @@ Os registros reais ficam em `assets/real/`. A fotografia de convivência usada n
 
 ## Observações institucionais
 Antes da publicação pública definitiva, a escola deve manter confirmadas as autorizações de uso das fotografias de alunos e equipe e validar eventuais informações operacionais que mudem com o tempo.
+
+## Status de release
+- QA local e responsivo: executado.
+- Status: **Release Candidate / aprovado para Preview**.
+- Production Final: somente após homologação da URL real da Vercel, incluindo player COC, mapa, formulário/WhatsApp, console e rotas.
