@@ -1,0 +1,36 @@
+COLÉGIO PERINI — V4.1 FINAL HARDENING
+
+Base preservada: V4 Production Candidate.
+
+ALTERAÇÕES DESTA RODADA
+1. Contato robusto sem dependência total de JavaScript:
+   - endereço já presente no HTML;
+   - telefone já presente no HTML;
+   - WhatsApp já presente no HTML;
+   - e-mail já presente no HTML;
+   - mapa já recebe src funcional no HTML;
+   - site.js continua atualizando todos os valores a partir de config.js.
+
+2. Conversão mobile da página Contato:
+   - no desktop, mantém texto/foto à esquerda e formulário à direita;
+   - no mobile, ordem passa a ser texto -> formulário -> foto -> contatos/mapa;
+   - foto institucional foi preservada integralmente.
+
+3. CSS tipográfico consolidado:
+   - escala de títulos centralizada em css/tokens.css;
+   - mobile também centralizado em tokens responsivos;
+   - removidas regras antigas de H1/H2 gigantes que já eram sobrescritas;
+   - componentes consomem os mesmos tokens;
+   - removido CSS legado da antiga capa sintética do vídeo COC.
+
+4. Nada funcional foi reescrito:
+   - menu preservado;
+   - rotas preservadas;
+   - WhatsApp preservado;
+   - formulário preservado;
+   - player COC preservado;
+   - SEO, sitemap, robots e GitHub Pages preservados;
+   - imagens e conteúdos aprovados preservados.
+
+STATUS
+APROVADO PARA UPLOAD E SMOKE TEST NO GITHUB PAGES.

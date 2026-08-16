@@ -19,8 +19,12 @@ window.PERINI_IMAGES = {
     fallback: 'assets/hero/jornada-perini.webp',
     width: 1672, height: 941,
     srcset: 'assets/hero/jornada-perini-768.webp 768w, assets/hero/jornada-perini-1280.webp 1280w, assets/hero/jornada-perini.webp 1672w'
-  }
-,
+  },
+  cocVideoCover: {
+    fallback: 'assets/video/coc-video-cover.webp',
+    width: 1600, height: 900,
+    srcset: 'assets/video/coc-video-cover-960.webp 960w, assets/video/coc-video-cover.webp 1600w'
+  },
   real: {
     historyDirection: {
       fallback: 'assets/real/direcao-historia.webp',

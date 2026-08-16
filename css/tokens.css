@@ -26,4 +26,25 @@
   --r-xl:58px;
   --container:min(1220px,calc(100% - 48px));
   --ease:cubic-bezier(.2,.75,.2,1);
+
+  /* V4 — escala tipográfica global */
+  --type-home-h1:clamp(3.45rem,5.8vw,5.6rem);
+  --type-page-h1:clamp(2.5rem,3.8vw,4rem);
+  --type-section-h2:clamp(1.95rem,2.75vw,3rem);
+  --type-feature-title:clamp(1.45rem,2.05vw,2.25rem);
+  --type-card-title:clamp(1.2rem,1.45vw,1.55rem);
+  --type-lead:clamp(1.03rem,1.25vw,1.18rem);
+}
+
+
+/* V4.1 — escala tipográfica responsiva centralizada */
+@media(max-width:720px){
+  :root{
+    --type-home-h1:clamp(2.8rem,12vw,3.65rem);
+    --type-page-h1:clamp(2.15rem,8.7vw,2.9rem);
+    --type-section-h2:clamp(1.75rem,7vw,2.3rem);
+    --type-feature-title:clamp(1.4rem,5.7vw,1.75rem);
+    --type-card-title:clamp(1.16rem,4.8vw,1.4rem);
+    --type-lead:1rem;
+  }
 }

@@ -1,0 +1,47 @@
+COLÉGIO PERINI — QA V4.1 FINAL HARDENING
+
+QA ESTÁTICO EXECUTADO
+- 8 arquivos HTML analisados.
+- 544 verificações automatizadas.
+- 0 erros.
+- 0 warnings.
+- 1 H1 por página.
+- 0 IDs duplicados.
+- 0 href vazios.
+- 0 recursos locais faltando.
+- 0 imagens sem alt.
+- 0 imagens sem width/height.
+- 4 arquivos JavaScript validados com node --check.
+- CSS tokens/base/components/responsive analisados com tinycss2: 0 erros de parse.
+- fallback estático de endereço validado.
+- fallback estático de telefone validado.
+- fallback estático de WhatsApp validado.
+- fallback estático de e-mail validado.
+- fallback estático do Google Maps validado.
+- capa COC preservada em assets/video/coc-video-cover.webp.
+- regras antigas de tipografia gigante removidas.
+- CSS da antiga capa sintética do vídeo removido por não possuir mais elemento correspondente no HTML.
+- termos institucionais proibidos auditados.
+
+DIFF CONTRA V4
+Arquivos técnicos intencionalmente alterados:
+- contato/index.html
+- css/tokens.css
+- css/base.css
+- css/components.css
+- css/responsive.css
+- VERSION.txt
+
+Arquivos funcionais NÃO alterados:
+- js/config.js
+- js/content.js
+- js/images.js
+- js/site.js
+- sitemap.xml
+- robots.txt
+- manifest.webmanifest
+- vercel.json
+- páginas de Fundamental I, Fundamental II, Ensino Médio, Sistema COC e Estrutura.
+
+OBSERVAÇÃO
+O ambiente desta sessão bloqueia navegação automatizada do Chromium/Playwright para localhost/file://, portanto o smoke test visual final deve ser feito depois do upload no endereço público do GitHub Pages. O QA estático e estrutural local passou integralmente.

@@ -1,4 +1,4 @@
-COLÉGIO PERINI — PRODUÇÃO / GITHUB PAGES
+COLÉGIO PERINI — V4.1 FINAL HARDENING / GITHUB PAGES
 
 1. Extraia o ZIP.
 2. Envie O CONTEÚDO da pasta extraída para a raiz do repositório periniebambino/colegioperini.
@@ -9,3 +9,5 @@ COLÉGIO PERINI — PRODUÇÃO / GITHUB PAGES
 7. URL esperada: https://periniebambino.github.io/colegioperini/
 
 Esta versão usa navegação compatível com GitHub Pages em subpasta e CTAs “Agende uma visita” direcionados ao WhatsApp.
+
+Após o GitHub Pages atualizar, faça o smoke test em desktop e celular: menu, WhatsApp, formulário, vídeo COC e mapa.
