@@ -6,14 +6,14 @@ window.PERINI_IMAGES = {
     srcset: 'assets/hero/jornada-perini-768.webp 768w, assets/hero/jornada-perini-1280.webp 1280w, assets/hero/jornada-perini.webp 1672w'
   },
   fundamental1: {
-    fallback: 'assets/ensino/fundamental-1.webp',
-    width: 1586, height: 992,
-    srcset: 'assets/ensino/fundamental-1-720.webp 720w, assets/ensino/fundamental-1.webp 1586w'
+    fallback: 'assets/ensino/fundamental-1-editorial.webp',
+    width: 1000, height: 700,
+    srcset: 'assets/ensino/fundamental-1-editorial-720.webp 720w, assets/ensino/fundamental-1-editorial.webp 1000w'
   },
   fundamental2: {
-    fallback: 'assets/ensino/fundamental-2.webp',
-    width: 1586, height: 992,
-    srcset: 'assets/ensino/fundamental-2-720.webp 720w, assets/ensino/fundamental-2.webp 1586w'
+    fallback: 'assets/ensino/fundamental-2-editorial.webp',
+    width: 1000, height: 700,
+    srcset: 'assets/ensino/fundamental-2-editorial-720.webp 720w, assets/ensino/fundamental-2-editorial.webp 1000w'
   },
   ensinoMedio: {
     fallback: 'assets/hero/jornada-perini.webp',

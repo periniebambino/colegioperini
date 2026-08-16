@@ -4,7 +4,7 @@ window.PERINI_CONFIG = {
     city: 'Carapicuíba',
     state: 'SP',
     since: '1987',
-    baseUrl: 'https://colegio-perini.vercel.app/'
+    baseUrl: 'https://periniebambino.github.io/colegioperini/'
   },
   contact: {
     address: 'R. Adão Gonçalves da Costa, 127 — Jardim Jussara — Carapicuíba/SP — 06321-040',
@@ -22,7 +22,7 @@ window.PERINI_CONFIG = {
     instagram: '',
     matriculaMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de receber informações sobre matrículas.',
     visitMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de agendar uma visita.',
-    visitPath: '/contato#agendar'
+    visitPath: '/contato/#agendar'
   },
   media: {
     cocVideoId: 'LLUYrDn4aXA',

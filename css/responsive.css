@@ -60,3 +60,16 @@ html,body{overflow-x:clip}
 @media(max-width:1080px){.hero-layout>*{min-width:0}}
 @media(max-width:340px){.hero-title{font-size:2.85rem}}
 @media(max-width:340px){.form-actions .btn{font-size:.92rem;padding-inline:1rem;white-space:nowrap}}
+
+/* PRODUCTION FINAL — refinamentos mobile */
+@media(max-width:720px){
+  .teacher-items{grid-template-columns:1fr}
+  .page-proof{display:flex;gap:.45rem 0;flex-direction:column}
+  .page-proof span{padding:0;margin:0}
+  .page-proof span:not(:last-child):after{display:none}
+  .project-group-items article:nth-last-child(-n+2){border-bottom:0}
+  .project-group-items article:last-child{border-bottom:1px solid var(--line)}
+  .coc-video-copy h2{font-size:clamp(1.95rem,8.9vw,2.8rem);line-height:1.04;max-width:18ch}
+  .coc-video-facade-copy strong{font-size:1.2rem}
+  .coc-video-play-icon{width:62px;height:62px}
+}

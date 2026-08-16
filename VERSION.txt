@@ -1,1 +1,4 @@
-3.5-release-candidate
+COLÉGIO PERINI — PRODUCTION FINAL
+Versão: 4.0.0
+Data: 2026-08-16
+Destino principal: GitHub Pages — https://periniebambino.github.io/colegioperini/

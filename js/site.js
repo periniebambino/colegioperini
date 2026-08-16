@@ -16,15 +16,26 @@
     if (value) el.href = value;
   });
   const whatsAppUrl = (message) => `https://wa.me/${cfg.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
-  const visitHref = cfg.links.visitPath || '/contato/#agendar';
+  const visitHref = whatsAppUrl(cfg.links.visitMessage || 'Olá! Gostaria de agendar uma visita ao Colégio Perini.');
   const matriculaHref = whatsAppUrl(cfg.links.matriculaMessage);
   const defaultWhatsAppHref = whatsAppUrl('Olá! Conheci o Colégio Perini pelo site e gostaria de mais informações.');
   const siteScript = document.querySelector('script[src$="js/site.js"]');
   const projectBase = siteScript ? new URL('../', siteScript.src) : new URL('/', location.href);
   const publicAsset = (path) => new URL(String(path || '').replace(/^\/+/, ''), projectBase).href;
+  const publicRoute = (route = '/') => {
+    const normalized = String(route || '/').replace(/^\/+/, '');
+    return new URL(normalized || './', projectBase).href;
+  };
+  const projectPath = projectBase.pathname.replace(/\/$/, '');
+  const localPathname = (pathname = location.pathname) => {
+    const raw = pathname || '/';
+    const local = projectPath && raw.startsWith(projectPath) ? raw.slice(projectPath.length) : raw;
+    return (`/${String(local || '/').replace(/^\/+/, '')}`).replace(/\/{2,}/g, '/');
+  };
 
   // Dados e links globais — uma única fonte para facilitar manutenção.
   setHref('[data-visit-link]', visitHref);
+  $$('[data-visit-link]').forEach((el) => { el.target = '_blank'; el.rel = 'noopener noreferrer'; });
   setHref('[data-matricula]', matriculaHref);
   setHref('[data-whatsapp]', defaultWhatsAppHref);
   setHref('[data-phone]', cfg.contact.phoneHref);
@@ -36,6 +47,13 @@
   setText('[data-whatsapp-text]', cfg.contact.whatsappDisplay);
   setText('[data-email-text]', cfg.contact.email);
   setText('[data-year]', String(new Date().getFullYear()));
+
+  // Links internos independentes do ambiente: raiz própria, GitHub Pages em subpasta ou Vercel.
+  $$('a[href^="/"]').forEach((link) => {
+    if (link.hasAttribute('data-visit-link')) return;
+    const original = link.getAttribute('href');
+    if (original) link.href = publicRoute(original);
+  });
 
   // Copies estratégicas centralizadas sem transformar o HTML em renderização completa por JS.
   if (content.homeSections) {
@@ -106,7 +124,7 @@
             <h3>${stage.headline || stage.label}</h3>
             <p>${stage.text}</p>
             <div class="stage-actions">
-              <a href="${stage.url}" data-track="etapa-${stage.id}" aria-label="Conhecer ${stage.label}">Conheça esta etapa <span aria-hidden="true">→</span></a>
+              <a href="${publicRoute(stage.url)}" data-track="etapa-${stage.id}" aria-label="Conhecer ${stage.label}">Conheça esta etapa <span aria-hidden="true">→</span></a>
               <a class="stage-whatsapp" href="${stageWhats}" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp sobre ${stage.label}">Falar com a escola</a>
             </div>
           </div>
@@ -121,7 +139,7 @@
 
   const journey = $('#journey-grid');
   if (journey && Array.isArray(content.journey)) {
-    journey.innerHTML = content.journey.map((item) => `<article class="journey-step" data-reveal><span>${item.step}</span><small>${item.label}</small><h3>${item.title}</h3><p>${item.text}</p>${item.url ? `<a class="journey-link" href="${item.url}">Conheça esta etapa <span aria-hidden="true">→</span></a>` : ''}</article>`).join('');
+    journey.innerHTML = content.journey.map((item) => `<article class="journey-step" data-reveal><span>${item.step}</span><small>${item.label}</small><h3>${item.title}</h3><p>${item.text}</p>${item.url ? `<a class="journey-link" href="${publicRoute(item.url)}">Conheça esta etapa <span aria-hidden="true">→</span></a>` : ''}</article>`).join('');
   }
 
   const reasons = $('#reasons-grid');
@@ -258,7 +276,7 @@
       '/estrutura-e-vida-escolar': 'Estrutura e vida escolar',
       '/contato': 'Contato e agendamento'
     };
-    const path = location.pathname.replace(/\/$/, '') || '/';
+    const path = localPathname().replace(/\/$/, '') || '/';
     const label = labels[path] || document.querySelector('h1')?.textContent?.trim() || 'Página';
     breadcrumbSchema.textContent = JSON.stringify({
       '@context': 'https://schema.org',
@@ -271,11 +289,11 @@
   }
 
   // Marca a rota atual para leitores de tela e navegação assistiva.
-  const currentPath = location.pathname.replace(/\/$/, '') || '/';
+  const currentPath = localPathname().replace(/\/$/, '') || '/';
   $$('a[href]').forEach((link) => {
     try {
       const url = new URL(link.href, location.href);
-      const linkPath = url.pathname.replace(/\/$/, '') || '/';
+      const linkPath = localPathname(url.pathname).replace(/\/$/, '') || '/';
       if (linkPath === currentPath && !url.hash && currentPath !== '/') link.setAttribute('aria-current', 'page');
     } catch (_) {}
   });

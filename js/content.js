@@ -29,14 +29,14 @@ window.PERINI_CONTENT = {
     { key: 'transformar', title: 'Transformar', text: 'Projetos que desenvolvem autonomia, criatividade, responsabilidade e cidadania.' }
   ],
   stages: [
-    { id: 'fundamental-1', url: '/fundamental-1', imageKey: 'fundamental1', label: 'Ensino Fundamental I', years: 'Do 1º ao 5º ano', headline: 'A base que dá segurança para aprender.', text: 'Hábitos de estudo, descobertas, acolhimento e acompanhamento para construir uma base consistente.' },
-    { id: 'fundamental-2', url: '/fundamental-2', imageKey: 'fundamental2', label: 'Ensino Fundamental II', years: 'Do 6º ao 9º ano', headline: 'Autonomia com acompanhamento de perto.', text: 'Aprofundamento dos conhecimentos, projetos e orientação para desenvolver autonomia com responsabilidade e pertencimento.' },
-    { id: 'ensino-medio', url: '/ensino-medio', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', headline: 'Preparação que começa desde o primeiro dia.', text: 'Sistema COC, avaliações e simulados em uma preparação progressiva ao longo dos três anos.' }
+    { id: 'fundamental-1', url: '/fundamental-1/', imageKey: 'fundamental1', label: 'Ensino Fundamental I', years: 'Do 1º ao 5º ano', headline: 'A base que dá segurança para aprender.', text: 'Hábitos de estudo, descobertas, acolhimento e acompanhamento para construir uma base consistente.' },
+    { id: 'fundamental-2', url: '/fundamental-2/', imageKey: 'fundamental2', label: 'Ensino Fundamental II', years: 'Do 6º ao 9º ano', headline: 'Autonomia com acompanhamento de perto.', text: 'Aprofundamento dos conhecimentos, projetos e orientação para desenvolver autonomia com responsabilidade e pertencimento.' },
+    { id: 'ensino-medio', url: '/ensino-medio/', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', headline: 'Preparação que começa desde o primeiro dia.', text: 'Sistema COC, avaliações e simulados em uma preparação progressiva ao longo dos três anos.' }
   ],
   journey: [
-    { step: '01', title: 'Base', label: 'Fundamental I', url: '/fundamental-1', text: 'Fundamentos, hábitos, curiosidade e confiança para seguir aprendendo.' },
-    { step: '02', title: 'Autonomia', label: 'Fundamental II', url: '/fundamental-2', text: 'Mais responsabilidade, projetos, aprofundamento e pensamento crítico.' },
-    { step: '03', title: 'Preparação', label: 'Ensino Médio', url: '/ensino-medio', text: 'Estratégias de estudo, simulados e preparação progressiva para o Ensino Superior.' }
+    { step: '01', title: 'Base', label: 'Fundamental I', url: '/fundamental-1/', text: 'Fundamentos, hábitos, curiosidade e confiança para seguir aprendendo.' },
+    { step: '02', title: 'Autonomia', label: 'Fundamental II', url: '/fundamental-2/', text: 'Mais responsabilidade, projetos, aprofundamento e pensamento crítico.' },
+    { step: '03', title: 'Preparação', label: 'Ensino Médio', url: '/ensino-medio/', text: 'Estratégias de estudo, simulados e preparação progressiva para o Ensino Superior.' }
   ],
   reasons: [
     { title: 'Acompanhamento próximo', text: 'Cada estudante é reconhecido em sua individualidade e acompanhado em seu desenvolvimento.' },
@@ -114,6 +114,6 @@ window.PERINI_CONTENT = {
     { question: 'Quais etapas de ensino o Colégio Perini oferece?', answer: 'O Colégio Perini atende o Ensino Fundamental I, do 1º ao 5º ano, o Ensino Fundamental II, do 6º ao 9º ano, e o Ensino Médio, da 1ª à 3ª série.' },
     { question: 'Qual sistema de ensino é utilizado?', answer: 'O Perini é parceiro do Sistema COC de Ensino, integrando material didático, recursos digitais, avaliações, simulados e ferramentas de acompanhamento da aprendizagem.' },
     { question: 'Onde fica o Colégio Perini?', answer: 'O Colégio Perini fica na Rua Adão Gonçalves da Costa, 127, Jardim Jussara, Carapicuíba/SP, CEP 06321-040.' },
-    { question: 'Como posso agendar uma visita?', answer: 'Acesse a página de contato, informe a etapa de interesse e continue a conversa pelo WhatsApp com a equipe da escola.' }
+    { question: 'Como posso agendar uma visita?', answer: 'Clique em Agende uma visita para abrir o WhatsApp da escola e conversar diretamente com nossa equipe.' }
   ]
 };

@@ -1,0 +1,17 @@
+COLÉGIO PERINI — QA FINAL DE PRODUÇÃO
+
+Checks executados: 887
+Falhas: 0
+
+STATUS: PASS
+
+Principais validações:
+- navegação sem links absolutos de raiz;
+- CTAs Agende uma visita apontam para WhatsApp;
+- canonical/OG/sitemap/robots apontam para GitHub Pages;
+- imagens editoriais F1/F2 presentes e assets antigos sem referência;
+- JavaScript sintaticamente válido;
+- assets locais e srcset existentes;
+- .nojekyll presente;
+- refinamento editorial sem microcaixas aplicado;
+- player COC continua sob demanda.

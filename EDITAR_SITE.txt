@@ -1,41 +1,31 @@
-COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — V3.4
+COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — PRODUCTION FINAL
 
-CONTATOS, WHATSAPP, TELEFONE, PORTAL, CAMPANHA E VÍDEO COC
+CONTATOS / WHATSAPP / TELEFONE / PORTAL / VÍDEO COC
 Abra: js/config.js
 
-VÍDEO DO SISTEMA COC
---------------------
-Procure por:
-media: {
-  cocVideoId: 'LLUYrDn4aXA',
-  cocVideoUrl: 'https://www.youtube.com/watch?v=LLUYrDn4aXA'
-}
-
-Para trocar o vídeo, altere o ID e a URL. Não precisa editar o HTML.
-
-HOME — TEXTOS PRINCIPAIS, ETAPAS, PROJETOS, ENSINO MÉDIO, DOBRA DO VÍDEO COC E FAQ
+TEXTOS PRINCIPAIS DA HOME
 Abra: js/content.js
 
 IMAGENS PRINCIPAIS
 Abra: js/images.js
 
-CORES E IDENTIDADE
-Abra: css/tokens.css
-
-TEXTOS DAS PÁGINAS INTERNAS
+PÁGINAS INTERNAS
 Fundamental I: fundamental-1/index.html
 Fundamental II: fundamental-2/index.html
 Ensino Médio: ensino-medio/index.html
 Sistema COC: sistema-de-ensino/index.html
 Estrutura: estrutura-e-vida-escolar/index.html
-Contato/agendamento: contato/index.html
+Contato: contato/index.html
 
-IMPORTANTE
-Telefone, WhatsApp, endereço, e-mail e Portal do Aluno NÃO devem ser repetidos manualmente nas páginas. Esses dados são preenchidos por js/config.js.
+PUBLICAÇÃO PRINCIPAL
+GitHub Pages:
+https://periniebambino.github.io/colegioperini/
 
-PUBLICAR
-Envie a raiz desta pasta para a Vercel. Não existe etapa de compilação.
-A pasta docs/ e os arquivos internos de manutenção estão listados no .vercelignore para não irem ao deploy.
+IMPORTANTE SOBRE LINKS
+A arquitetura está preparada para o projeto rodar em /colegioperini/. Não volte a usar links internos absolutos como href="/fundamental-1", pois isso envia o navegador para a raiz do domínio e pode gerar 404 no GitHub Pages.
 
-ANTES DE PRODUÇÃO
-Teste todas as rotas, formulário, WhatsApp, mapa, Portal do Aluno e o Play do vídeo COC. O link “Abrir o vídeo no YouTube” é o fallback caso a incorporação seja bloqueada pela plataforma.
+CTAs
+“Agende uma visita” abre o WhatsApp diretamente.
+
+IMAGENS DOS CICLOS
+Use fotografia limpa. Não colocar título, logo, ícones ou card dentro da imagem. Texto e botões pertencem ao HTML/CSS.

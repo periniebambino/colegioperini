@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://colegio-perini.vercel.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://colegio-perini.vercel.app/fundamental-1</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://colegio-perini.vercel.app/fundamental-2</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://colegio-perini.vercel.app/ensino-medio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://colegio-perini.vercel.app/sistema-de-ensino</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://colegio-perini.vercel.app/estrutura-e-vida-escolar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://colegio-perini.vercel.app/contato</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/fundamental-1/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/fundamental-2/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/ensino-medio/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/sistema-de-ensino/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/estrutura-e-vida-escolar/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://periniebambino.github.io/colegioperini/contato/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

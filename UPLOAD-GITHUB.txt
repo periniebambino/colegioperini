@@ -1,12 +1,11 @@
-COLÉGIO PERINI V3.5 — GITHUB READY
+COLÉGIO PERINI — PRODUÇÃO / GITHUB PAGES
 
-Este pacote contém somente os arquivos necessários para o site.
-Quantidade aproximada: 63 arquivos.
+1. Extraia o ZIP.
+2. Envie O CONTEÚDO da pasta extraída para a raiz do repositório periniebambino/colegioperini.
+3. O index.html precisa ficar na raiz do repositório.
+4. Mantenha as pastas assets, css, js, fundamental-1, fundamental-2, ensino-medio, sistema-de-ensino, estrutura-e-vida-escolar e contato.
+5. Mantenha o arquivo .nojekyll.
+6. Em GitHub > Settings > Pages, publique a branch usada no repositório, pasta /(root).
+7. URL esperada: https://periniebambino.github.io/colegioperini/
 
-IMPORTANTE:
-1. Extraia este ZIP no computador.
-2. No repositório do GitHub, envie os ARQUIVOS E PASTAS EXTRAÍDOS — não envie o ZIP como site.
-3. Garanta que index.html fique na raiz do repositório.
-4. Se o Vercel estiver conectado ao GitHub, faça o deploy a partir deste repositório.
-
-A documentação e as capturas de QA foram separadas para não pesar nem exceder limites de upload do GitHub.
+Esta versão usa navegação compatível com GitHub Pages em subpasta e CTAs “Agende uma visita” direcionados ao WhatsApp.

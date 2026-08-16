@@ -1,0 +1,14 @@
+COLÉGIO PERINI — RELEASE FINAL
+
+Correções desta versão:
+- arquitetura de links compatível com GitHub Pages em /colegioperini/;
+- menu desktop/mobile e links de páginas corrigidos para não cair em 404;
+- CTAs “Agende uma visita” direcionados ao WhatsApp oficial;
+- títulos da dobra Perini + Sistema COC reduzidos e reequilibrados;
+- microcaixas decorativas removidas/simplificadas em professores, provas, listas e contato;
+- Fundamental I e Fundamental II agora usam fotografias editoriais limpas, sem texto embutido;
+- canonical, Open Graph, sitemap, robots e baseUrl atualizados para a URL pública do GitHub Pages;
+- manifest ajustado para funcionar em subpasta;
+- .nojekyll incluído;
+- assets antigos dos ciclos, não utilizados, removidos do pacote de produção;
+- JS validado e referências locais auditadas.
