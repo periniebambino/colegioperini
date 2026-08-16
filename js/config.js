@@ -21,7 +21,8 @@ window.PERINI_CONFIG = {
     portalAluno: 'https://portal.coc.com.br/',
     instagram: '',
     matriculaMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de receber informações sobre matrículas.',
-    visitMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de agendar uma visita.'
+    visitMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de agendar uma visita.',
+    visitPath: '/contato#agendar'
   },
   campaign: {
     active: false,

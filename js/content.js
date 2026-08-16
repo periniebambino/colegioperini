@@ -2,12 +2,14 @@ window.PERINI_CONTENT = {
   hero: {
     eyebrow: 'Colégio Perini · Carapicuíba · Desde 1987',
     title: ['Aprender.', 'Pertencer.', 'Transformar.'],
-    text: 'Uma educação que combina excelência acadêmica, acolhimento e formação humana em cada etapa da trajetória escolar.'
+    text: 'Uma escola em Carapicuíba que une excelência acadêmica, Sistema COC, acompanhamento próximo e experiências que ajudam cada aluno a crescer.'
   },
   proof: [
     { value: '1987', label: 'Uma trajetória construída ao lado das famílias.' },
     { value: 'COC', label: 'Conteúdo, tecnologia e acompanhamento pedagógico.' },
-    { value: 'Integral', label: 'Formação acadêmica, humana, social e cultural.' }
+    { value: '1º ao 5º', label: 'Ensino Fundamental I com base e acolhimento.' },
+    { value: '6º ao 9º', label: 'Fundamental II com autonomia e pertencimento.' },
+    { value: '1ª à 3ª', label: 'Ensino Médio com preparação progressiva.' }
   ],
   pillars: [
     { key: 'aprender', title: 'Aprender', text: 'Ensino de qualidade, professores preparados e metodologia atual.' },
@@ -15,9 +17,21 @@ window.PERINI_CONTENT = {
     { key: 'transformar', title: 'Transformar', text: 'Projetos que desenvolvem autonomia, criatividade, responsabilidade e cidadania.' }
   ],
   stages: [
-    { id: 'fundamental-1', imageKey: 'fundamental1', label: 'Ensino Fundamental I', years: 'Do 1º ao 5º ano', text: 'Descobertas, acolhimento e uma base forte para aprender com confiança.' },
-    { id: 'fundamental-2', imageKey: 'fundamental2', label: 'Ensino Fundamental II', years: 'Do 6º ao 9º ano', text: 'Autonomia, responsabilidade, projetos e acompanhamento próximo.' },
-    { id: 'ensino-medio', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', text: 'Preparação contínua para o ENEM, vestibulares e escolhas para a vida.' }
+    { id: 'fundamental-1', url: '/fundamental-1', imageKey: 'fundamental1', label: 'Ensino Fundamental I', years: 'Do 1º ao 5º ano', headline: 'A base que dá segurança para aprender.', text: 'Descobertas, acolhimento e uma base consistente para aprender com confiança.' },
+    { id: 'fundamental-2', url: '/fundamental-2', imageKey: 'fundamental2', label: 'Ensino Fundamental II', years: 'Do 6º ao 9º ano', headline: 'Autonomia com acompanhamento de perto.', text: 'Mais responsabilidade, projetos, pertencimento e orientação em uma fase de grandes mudanças.' },
+    { id: 'ensino-medio', url: '/ensino-medio', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', headline: 'Preparação que começa desde o primeiro dia.', text: 'Base, avaliações, simulados e estratégias de estudo construídos ao longo dos três anos.' }
+  ],
+  journey: [
+    { step: '01', title: 'Base', label: 'Fundamental I', text: 'Curiosidade, confiança, hábitos e fundamentos para avançar.' },
+    { step: '02', title: 'Autonomia', label: 'Fundamental II', text: 'Responsabilidade, convivência, projetos e pensamento crítico.' },
+    { step: '03', title: 'Preparação', label: 'Ensino Médio', text: 'Estratégia de estudo, simulados, escolhas e preparação para o Ensino Superior.' }
+  ],
+  reasons: [
+    { title: 'Acompanhamento próximo', text: 'Cada estudante é reconhecido em sua individualidade e acompanhado em seu desenvolvimento.' },
+    { title: 'Sistema COC', text: 'Material didático, recursos digitais, avaliações e simulados integrados à proposta pedagógica.' },
+    { title: 'Professores preparados', text: 'Formação, experiência, didática, planejamento e aperfeiçoamento contínuo.' },
+    { title: 'Projetos com propósito', text: 'Experiências que conectam conhecimento, comunicação, ciência, cultura, cidadania e futuro.' },
+    { title: 'Família + escola', text: 'Diálogo e parceria para fortalecer o desenvolvimento integral de cada aluno.' }
   ],
   history: {
     title: 'Crescemos junto com nossos alunos.',
@@ -35,14 +49,14 @@ window.PERINI_CONTENT = {
     ]
   },
   projects: [
-    { title: 'Feira Cultural e Científica', text: 'Pesquisa, investigação e projetos interdisciplinares que desenvolvem criatividade, comunicação e pensamento crítico.' },
-    { title: 'Circuito do Conhecimento', text: 'Estações de aprendizagem com atividades práticas, colaborativas e gamificadas.' },
-    { title: 'Podcast Educacional', text: 'Pesquisa, roteiro e gravação para desenvolver comunicação, argumentação e protagonismo.' },
-    { title: 'Informativo Estudantil', text: 'Produção jornalística que incentiva escrita, pesquisa e responsabilidade na comunicação.' },
-    { title: 'Sustentabilidade e Cidadania', text: 'Experiências voltadas à consciência ambiental, social e à construção de atitudes responsáveis.' },
-    { title: 'Profissões em Foco', text: 'Contato com diferentes áreas profissionais para apoiar escolhas conscientes e a construção da trajetória profissional.' },
-    { title: 'Chá Literário', text: 'Leitura, interpretação, sensibilidade artística e troca de ideias por meio da literatura.' },
-    { title: 'Projetos Solidários', text: 'Empatia, solidariedade, respeito e responsabilidade social conectados à comunidade.' }
+    { category: 'Conhecimento e investigação', title: 'Feira Cultural e Científica', text: 'Pesquisa, investigação e projetos interdisciplinares que desenvolvem criatividade, comunicação e pensamento crítico.' },
+    { category: 'Conhecimento e investigação', title: 'Circuito do Conhecimento', text: 'Estações de aprendizagem com atividades práticas, colaborativas e gamificadas.' },
+    { category: 'Comunicação e cultura', title: 'Podcast Educacional', text: 'Pesquisa, roteiro e gravação para desenvolver comunicação, argumentação e protagonismo.' },
+    { category: 'Comunicação e cultura', title: 'Informativo Estudantil', text: 'Produção jornalística que incentiva escrita, pesquisa e responsabilidade na comunicação.' },
+    { category: 'Comunicação e cultura', title: 'Chá Literário', text: 'Leitura, interpretação, sensibilidade artística e troca de ideias por meio da literatura.' },
+    { category: 'Cidadania e futuro', title: 'Sustentabilidade e Cidadania', text: 'Experiências voltadas à consciência ambiental, social e à construção de atitudes responsáveis.' },
+    { category: 'Cidadania e futuro', title: 'Profissões em Foco', text: 'Contato com diferentes áreas profissionais para apoiar escolhas conscientes e a construção da trajetória profissional.' },
+    { category: 'Cidadania e futuro', title: 'Projetos Solidários', text: 'Empatia, solidariedade, respeito e responsabilidade social conectados à comunidade.' }
   ],
   highSchool: {
     title: 'A preparação começa antes do Terceirão.',
@@ -80,6 +94,6 @@ window.PERINI_CONTENT = {
     { question: 'Quais etapas de ensino o Colégio Perini oferece?', answer: 'O Colégio Perini atende o Ensino Fundamental I, do 1º ao 5º ano, o Ensino Fundamental II, do 6º ao 9º ano, e o Ensino Médio, da 1ª à 3ª série.' },
     { question: 'Qual sistema de ensino é utilizado?', answer: 'O Perini é parceiro do Sistema COC de Ensino, integrando material didático, recursos digitais, avaliações, simulados e ferramentas de acompanhamento da aprendizagem.' },
     { question: 'Onde fica o Colégio Perini?', answer: 'O Colégio Perini fica na Rua Adão Gonçalves da Costa, 127, Jardim Jussara, Carapicuíba/SP, CEP 06321-040.' },
-    { question: 'Como posso agendar uma visita?', answer: 'Você pode usar o botão “Agende uma visita” no site para iniciar uma conversa com a equipe do Colégio Perini pelo WhatsApp.' }
+    { question: 'Como posso agendar uma visita?', answer: 'Acesse a página de contato, informe a etapa de interesse e continue a conversa pelo WhatsApp com a equipe da escola.' }
   ]
 };

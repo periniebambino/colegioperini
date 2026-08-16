@@ -16,11 +16,13 @@
     if (value) el.href = value;
   });
   const whatsAppUrl = (message) => `https://wa.me/${cfg.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
-  const visitHref = whatsAppUrl(cfg.links.visitMessage);
+  const visitHref = cfg.links.visitPath || '/contato/#agendar';
+  const matriculaHref = whatsAppUrl(cfg.links.matriculaMessage);
   const defaultWhatsAppHref = whatsAppUrl('Olá! Conheci o Colégio Perini pelo site e gostaria de mais informações.');
 
   // Dados e links globais — uma única fonte para facilitar manutenção.
   setHref('[data-visit-link]', visitHref);
+  setHref('[data-matricula]', matriculaHref);
   setHref('[data-whatsapp]', defaultWhatsAppHref);
   setHref('[data-phone]', cfg.contact.phoneHref);
   setHref('[data-email]', cfg.contact.emailHref);
@@ -61,17 +63,20 @@
     stages.innerHTML = content.stages.map((stage, index) => {
       const image = images[stage.imageKey];
       const stageMessage = `Olá! Conheci o Colégio Perini pelo site e gostaria de informações sobre ${stage.label}.`;
-      const stageHref = whatsAppUrl(stageMessage);
+      const stageWhats = whatsAppUrl(stageMessage);
       return `
         <article class="stage-card" data-reveal>
           <div class="stage-media">
-            <img src="${image.fallback}" srcset="${image.srcset}" sizes="(max-width:1080px) 92vw, 55vw" width="1586" height="992" alt="${stage.label} no Colégio Perini" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">
+            <img src="${image.fallback}" srcset="${image.srcset}" sizes="(max-width:1080px) 92vw, 55vw" width="${image.width || 1586}" height="${image.height || 992}" alt="${stage.label} no Colégio Perini" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">
           </div>
           <div class="stage-copy">
             <span>${stage.years}</span>
-            <h3>${stage.label}</h3>
+            <h3>${stage.headline || stage.label}</h3>
             <p>${stage.text}</p>
-            <a href="${stageHref}" target="_blank" rel="noopener noreferrer" data-track="etapa-${stage.id}" aria-label="Pedir informações sobre ${stage.label}">Quero conhecer esta etapa <span aria-hidden="true">→</span></a>
+            <div class="stage-actions">
+              <a href="${stage.url}" data-track="etapa-${stage.id}" aria-label="Conhecer ${stage.label}">Conheça esta etapa <span aria-hidden="true">→</span></a>
+              <a class="stage-whatsapp" href="${stageWhats}" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp sobre ${stage.label}">Falar com a escola</a>
+            </div>
           </div>
         </article>`;
     }).join('');
@@ -81,6 +86,16 @@
     const stage = link.dataset.stageVisit;
     link.href = whatsAppUrl(`Olá! Conheci o Colégio Perini pelo site e gostaria de informações sobre ${stage}.`);
   });
+
+  const journey = $('#journey-grid');
+  if (journey && Array.isArray(content.journey)) {
+    journey.innerHTML = content.journey.map((item) => `<article class="journey-step" data-reveal><span>${item.step}</span><small>${item.label}</small><h3>${item.title}</h3><p>${item.text}</p></article>`).join('');
+  }
+
+  const reasons = $('#reasons-grid');
+  if (reasons && Array.isArray(content.reasons)) {
+    reasons.innerHTML = content.reasons.map((item, index) => `<article class="reason-item" data-reveal><span>${String(index + 1).padStart(2, '0')}</span><div><h3>${item.title}</h3><p>${item.text}</p></div></article>`).join('');
+  }
 
   setText('[data-history-title]', content.history.title);
   setText('[data-history-text]', content.history.text);
@@ -95,12 +110,14 @@
 
   const projects = $('#projects-grid');
   if (projects) {
-    projects.innerHTML = content.projects.map((project, index) => `
-      <article class="project-card" data-reveal>
-        <span class="project-num">${String(index + 1).padStart(2, '0')}</span>
-        <h3>${project.title}</h3>
-        <p>${project.text}</p>
-      </article>`).join('');
+    const groups = [...new Set(content.projects.map((project) => project.category))];
+    projects.innerHTML = groups.map((group, groupIndex) => {
+      const items = content.projects.filter((project) => project.category === group);
+      return `<section class="project-group" data-reveal>
+        <div class="project-group-head"><span>${String(groupIndex + 1).padStart(2, '0')}</span><h3>${group}</h3></div>
+        <div class="project-group-items">${items.map((project) => `<article><h4>${project.title}</h4><p>${project.text}</p></article>`).join('')}</div>
+      </section>`;
+    }).join('');
   }
 
   setText('[data-highschool-text]', content.highSchool.text);
@@ -244,6 +261,34 @@
   const syncHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 18);
   syncHeader();
   addEventListener('scroll', syncHeader, { passive: true });
+
+
+  // Formulário de agendamento: não armazena dados; monta a mensagem e continua no WhatsApp.
+  const visitForm = $('#visit-form');
+  if (visitForm) {
+    visitForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!visitForm.reportValidity()) return;
+      const data = new FormData(visitForm);
+      const responsible = String(data.get('responsavel') || '').trim();
+      const student = String(data.get('aluno') || '').trim();
+      const stage = String(data.get('etapa') || '').trim();
+      const phone = String(data.get('whatsapp') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const note = String(data.get('mensagem') || '').trim();
+      const lines = [
+        'Olá! Conheci o Colégio Perini pelo site e gostaria de agendar uma visita.',
+        '',
+        `Responsável: ${responsible}`,
+        `Aluno(a): ${student}`,
+        `Etapa de interesse: ${stage}`,
+        `WhatsApp para retorno: ${phone}`
+      ];
+      if (email) lines.push(`E-mail: ${email}`);
+      if (note) lines.push(`Observação: ${note}`);
+      window.open(whatsAppUrl(lines.join('\n')), '_blank', 'noopener,noreferrer');
+    });
+  }
 
   // Revelação progressiva com fallback completo para reduced motion.
   const reveal = () => {

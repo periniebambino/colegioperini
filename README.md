@@ -1,37 +1,29 @@
-# Colégio Perini — Site Premium v1.2 Produção
+# Colégio Perini — V3 Homologação
 
-Pacote estático pronto para publicação em Vercel ou GitHub Pages.
+Site estático premium, responsivo e multipágina, pronto para Preview na Vercel.
 
-## Abrir no computador
-Abra `index.html` no navegador. Para testar o mapa exatamente como em produção, prefira um servidor local simples ou o Preview da Vercel.
+## Rotas
+- `/` — Home institucional/comercial
+- `/fundamental-1`
+- `/fundamental-2`
+- `/ensino-medio`
+- `/sistema-de-ensino`
+- `/estrutura-e-vida-escolar`
+- `/contato`
 
 ## Onde editar
-- **Telefone, WhatsApp, endereço, e-mail, Portal do Aluno e campanha:** `js/config.js`
-- **Textos institucionais, etapas, projetos, Ensino Médio, estrutura e FAQ:** `js/content.js`
-- **Caminhos das imagens principais:** `js/images.js`
-- **Cores da marca e tokens:** `css/tokens.css`
+- Contatos, WhatsApp, Portal e campanha: `js/config.js`
+- Conteúdo da Home e dados compartilhados: `js/content.js`
+- Imagens principais: `js/images.js`
+- Cores/tokens: `css/tokens.css`
+- Conteúdo aprofundado das páginas: `*/index.html`
 
-## Trocar uma foto
-1. Coloque a nova imagem dentro de `assets/` na pasta correspondente.
-2. Use WebP sempre que possível.
-3. Atualize o caminho em `js/images.js`.
-4. Se criar uma versão menor para celular, atualize também o `srcset`.
+## Agendamento
+O formulário em `/contato` não possui backend e não armazena dados. Ele monta uma mensagem com responsável, aluno, etapa e contato e abre o WhatsApp oficial para confirmação do envio.
 
-## Publicar na Vercel
-1. Envie toda a pasta do projeto para o repositório conectado à Vercel.
-2. Não é necessário comando de build.
-3. O diretório de saída é a própria raiz do projeto.
-4. Faça Preview antes de substituir a versão em produção.
+## Publicação
+Sem build. Publique a raiz do projeto na Vercel e valide todas as rotas no Preview antes de promover para produção.
 
-## URL configurada
-A versão atual está preparada para substituir `https://colegio-perini.vercel.app/`. Se o domínio mudar, atualize:
-- `index.html`: canonical, Open Graph e Twitter Card;
-- `js/config.js`: `school.baseUrl`;
-- `robots.txt`;
-- `sitemap.xml`.
-
-## Antes de publicar
-Confira `docs/CHECKLIST-PUBLICACAO.md`.
-
-## Observação de conteúdo
-O marco institucional adotado é **1987**, conforme o material mais recente da Coordenação. O site antigo foi usado apenas como fonte complementar para dados públicos e estrutura física já divulgada.
+## Pendências institucionais que NÃO bloqueiam a V3
+- Fotografias reais e atuais de estrutura/professores/projetos para substituir ou ampliar o acervo.
+- Confirmação de Programa Bilíngue, Projeto de Vida formal e atividades fixas antes de qualquer publicação desses itens.

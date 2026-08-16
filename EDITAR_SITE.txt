@@ -1,16 +1,27 @@
-COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO
+COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — V3
 
-CONTATOS E LINKS
+CONTATOS, WHATSAPP, TELEFONE, PORTAL E CAMPANHA
 Abra: js/config.js
 
-TEXTOS
+HOME — TEXTOS PRINCIPAIS, ETAPAS, PROJETOS, ENSINO MÉDIO E FAQ
 Abra: js/content.js
 
-IMAGENS
+IMAGENS PRINCIPAIS
 Abra: js/images.js
 
-CORES
+CORES E IDENTIDADE
 Abra: css/tokens.css
+
+TEXTOS DAS PÁGINAS INTERNAS
+Fundamental I: fundamental-1/index.html
+Fundamental II: fundamental-2/index.html
+Ensino Médio: ensino-medio/index.html
+Sistema COC: sistema-de-ensino/index.html
+Estrutura: estrutura-e-vida-escolar/index.html
+Contato/agendamento: contato/index.html
+
+IMPORTANTE
+Telefone, WhatsApp, endereço, e-mail e Portal do Aluno NÃO devem ser repetidos manualmente nas páginas: esses dados são preenchidos por js/config.js.
 
 ATIVAR CAMPANHA NO TOPO
 Em js/config.js, altere:
@@ -19,5 +30,9 @@ para:
 active: true
 
 PUBLICAR
-Envie a pasta inteira para o repositório usado pela Vercel.
+Envie a raiz desta pasta para o projeto Vercel.
 Não existe etapa de compilação.
+A pasta docs/ e os arquivos internos de manutenção estão listados no .vercelignore para não irem ao deploy.
+
+ANTES DE PRODUÇÃO
+Suba primeiro como Preview e teste todas as rotas, formulário, WhatsApp, mapa e Portal do Aluno.
