@@ -1,0 +1,23 @@
+COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO
+
+CONTATOS E LINKS
+Abra: js/config.js
+
+TEXTOS
+Abra: js/content.js
+
+IMAGENS
+Abra: js/images.js
+
+CORES
+Abra: css/tokens.css
+
+ATIVAR CAMPANHA NO TOPO
+Em js/config.js, altere:
+active: false
+para:
+active: true
+
+PUBLICAR
+Envie a pasta inteira para o repositório usado pela Vercel.
+Não existe etapa de compilação.
