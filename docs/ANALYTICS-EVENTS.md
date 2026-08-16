@@ -12,5 +12,8 @@ Eventos prioritários:
 - `whatsapp-contato`
 - `whatsapp-footer`
 - `formulario-visita`
+- `coc-video-play`
+- `coc-video-youtube`
+- `visita-coc-video`
 
 O `site.js` envia `perini_cta_click` para `window.dataLayer` somente quando um `dataLayer` já tiver sido instalado externamente.

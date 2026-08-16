@@ -13,6 +13,7 @@
 - [ ] Testar menu mobile.
 - [ ] Testar todos os botões “Agende uma visita”.
 - [ ] Testar telefone, WhatsApp, e-mail, mapa e Portal do Aluno.
+- [ ] Testar Play do vídeo COC e o link de fallback “Abrir no YouTube”.
 - [ ] Confirmar que `robots.txt` e `sitemap.xml` respondem normalmente.
 - [ ] Conferir a imagem de compartilhamento no WhatsApp após o deploy.
 - [ ] Confirmar que não há console errors.

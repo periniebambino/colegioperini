@@ -26,3 +26,9 @@ Usado para conferir:
 - espaços físicos já divulgados publicamente.
 
 Quando houve divergência, o material mais recente da Coordenação prevaleceu.
+
+## Mídia complementar — Sistema COC
+Vídeo fornecido pelo usuário para integração à Home: `https://www.youtube.com/watch?v=LLUYrDn4aXA`.
+
+O vídeo é usado como prova complementar na dobra Perini + Sistema COC. O texto ao redor utiliza somente informações já validadas no material institucional; não foram criadas alegações a partir do conteúdo do vídeo.
+

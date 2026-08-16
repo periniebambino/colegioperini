@@ -140,6 +140,37 @@
       <div class="coc-item"><b>${String(index + 1).padStart(2, '0')}</b><span>${item}</span></div>`).join('');
   }
 
+  const cocVideo = content.cocVideo || {};
+  setText('[data-coc-video-kicker]', cocVideo.kicker);
+  setText('[data-coc-video-title]', cocVideo.title);
+  setText('[data-coc-video-text]', cocVideo.text);
+  setText('[data-coc-video-note]', cocVideo.note);
+  setText('[data-coc-video-label]', cocVideo.videoLabel);
+  setText('[data-coc-video-facade-title]', cocVideo.videoTitle);
+
+  const cocVideoTrigger = $('[data-coc-video-play]');
+  const cocVideoExternal = $('[data-coc-video-external]');
+  const cocVideoId = cfg.media?.cocVideoId;
+  const cocVideoUrl = cfg.media?.cocVideoUrl;
+  if (cocVideoTrigger && cocVideoUrl) cocVideoTrigger.href = cocVideoUrl;
+  if (cocVideoExternal && cocVideoUrl) cocVideoExternal.href = cocVideoUrl;
+  if (cocVideoTrigger && cocVideoId) {
+    cocVideoTrigger.addEventListener('click', (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      const iframe = document.createElement('iframe');
+      iframe.className = 'coc-video-embed';
+      iframe.src = `${cfg.media?.cocEmbedBase || 'https://www.youtube-nocookie.com/embed/'}${encodeURIComponent(cocVideoId)}?autoplay=1&rel=0`;
+      iframe.title = 'Vídeo institucional do Sistema COC de Ensino';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.setAttribute('tabindex', '0');
+      cocVideoTrigger.replaceWith(iframe);
+      iframe.focus({ preventScroll: true });
+    }, { once: true });
+  }
+
   const projects = $('#projects-grid');
   if (projects) {
     const groups = [...new Set(content.projects.map((project) => project.category))];

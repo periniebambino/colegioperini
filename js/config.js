@@ -24,6 +24,11 @@ window.PERINI_CONFIG = {
     visitMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de agendar uma visita.',
     visitPath: '/contato#agendar'
   },
+  media: {
+    cocVideoId: 'LLUYrDn4aXA',
+    cocVideoUrl: 'https://www.youtube.com/watch?v=LLUYrDn4aXA',
+    cocEmbedBase: 'https://www.youtube-nocookie.com/embed/'
+  },
   campaign: {
     active: false,
     label: 'Matrículas abertas',

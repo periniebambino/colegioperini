@@ -4,3 +4,6 @@
 button{cursor:pointer}
 iframe{border:0}
 ::selection{background:rgba(60,169,226,.22);color:var(--ink)}
+
+/* V3.3 — equilíbrio editorial sem quebras manuais */
+.hero-title,.section-head h2,.page-hero-copy h1,.editorial-intro h2,.reasons-intro h2,.real-story-copy h2,.page-cta h2,.final-cta h2,.contact-copy h2,.visit-intro h1{text-wrap:balance}.hero-intro,.section-head>p,.page-hero-copy>p,.editorial-intro>p,.real-story-copy>p,.page-cta p,.final-cta p,.contact-copy>p,.visit-intro>p{text-wrap:pretty}

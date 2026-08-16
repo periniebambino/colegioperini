@@ -2,19 +2,19 @@ window.PERINI_CONTENT = {
   hero: {
     eyebrow: 'Colégio Perini · Carapicuíba · Desde 1987',
     title: ['Aprender.', 'Pertencer.', 'Transformar.'],
-    text: 'Uma escola em Carapicuíba que une excelência acadêmica, Sistema COC, acompanhamento próximo e experiências que ajudam cada aluno a crescer.'
+    text: 'Do Fundamental I ao Ensino Médio, o Perini combina Sistema COC, professores preparados, acompanhamento próximo e experiências que ajudam cada estudante a avançar.'
   },
   homeSections: {
-    essenceTitle: 'Cada aluno é conhecido, acompanhado e desafiado a avançar.',
-    essenceText: 'No Perini, excelência acadêmica, acolhimento e autonomia caminham juntos em cada etapa da trajetória.',
-    reasonsTitle: 'Desde 1987, proximidade também é método.',
-    reasonsText: 'A confiança aparece na rotina: acompanhamento próximo, Sistema COC, professores preparados, projetos e parceria com as famílias.',
-    contactTitle: 'Conheça o Perini de perto.',
-    contactText: 'Agende uma visita, conheça a proposta pedagógica e converse com a equipe sobre a etapa do seu filho.'
+    essenceTitle: 'Cada estudante é conhecido em sua individualidade.',
+    essenceText: 'No Perini, acolhimento, formação acadêmica e desenvolvimento de autonomia fazem parte da mesma trajetória.',
+    reasonsTitle: 'O que uma família pode esperar do Perini.',
+    reasonsText: 'Ensino estruturado, professores preparados, projetos, acompanhamento e parceria com as famílias sustentam a proposta em cada etapa.',
+    contactTitle: 'Visite o Perini e converse sobre a etapa do seu filho.',
+    contactText: 'Conheça a proposta, tire dúvidas com a equipe e veja os espaços antes de tomar sua decisão.'
   },
   contactPage: {
     title: 'Agende uma visita e conheça o Perini de perto.',
-    text: 'Informe os dados essenciais. Ao continuar, sua mensagem será organizada e aberta no WhatsApp da escola — sem cadastro ou armazenamento neste site.'
+    text: 'Conte em que etapa seu filho está e deixe um contato. Ao continuar, o site prepara sua mensagem e abre o WhatsApp da escola para você confirmar o envio.'
   },
   proof: [
     { value: '1987', label: 'Uma trajetória construída ao lado das famílias.' },
@@ -29,14 +29,14 @@ window.PERINI_CONTENT = {
     { key: 'transformar', title: 'Transformar', text: 'Projetos que desenvolvem autonomia, criatividade, responsabilidade e cidadania.' }
   ],
   stages: [
-    { id: 'fundamental-1', url: '/fundamental-1', imageKey: 'fundamental1', label: 'Ensino Fundamental I', years: 'Do 1º ao 5º ano', headline: 'A base que dá segurança para aprender.', text: 'Descobertas, acolhimento e uma base consistente para aprender com confiança.' },
-    { id: 'fundamental-2', url: '/fundamental-2', imageKey: 'fundamental2', label: 'Ensino Fundamental II', years: 'Do 6º ao 9º ano', headline: 'Autonomia com acompanhamento de perto.', text: 'Mais responsabilidade, projetos, pertencimento e orientação em uma fase de grandes mudanças.' },
-    { id: 'ensino-medio', url: '/ensino-medio', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', headline: 'Preparação que começa desde o primeiro dia.', text: 'Base, avaliações, simulados e estratégias de estudo construídos ao longo dos três anos.' }
+    { id: 'fundamental-1', url: '/fundamental-1', imageKey: 'fundamental1', label: 'Ensino Fundamental I', years: 'Do 1º ao 5º ano', headline: 'A base que dá segurança para aprender.', text: 'Hábitos de estudo, descobertas, acolhimento e acompanhamento para construir uma base consistente.' },
+    { id: 'fundamental-2', url: '/fundamental-2', imageKey: 'fundamental2', label: 'Ensino Fundamental II', years: 'Do 6º ao 9º ano', headline: 'Autonomia com acompanhamento de perto.', text: 'Aprofundamento dos conhecimentos, projetos e orientação para desenvolver autonomia com responsabilidade e pertencimento.' },
+    { id: 'ensino-medio', url: '/ensino-medio', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', headline: 'Preparação que começa desde o primeiro dia.', text: 'Sistema COC, avaliações e simulados em uma preparação progressiva ao longo dos três anos.' }
   ],
   journey: [
-    { step: '01', title: 'Base', label: 'Fundamental I', url: '/fundamental-1', text: 'Curiosidade, confiança, hábitos e fundamentos para avançar.' },
-    { step: '02', title: 'Autonomia', label: 'Fundamental II', url: '/fundamental-2', text: 'Responsabilidade, convivência, projetos e pensamento crítico.' },
-    { step: '03', title: 'Preparação', label: 'Ensino Médio', url: '/ensino-medio', text: 'Estratégia de estudo, simulados, escolhas e preparação para o Ensino Superior.' }
+    { step: '01', title: 'Base', label: 'Fundamental I', url: '/fundamental-1', text: 'Fundamentos, hábitos, curiosidade e confiança para seguir aprendendo.' },
+    { step: '02', title: 'Autonomia', label: 'Fundamental II', url: '/fundamental-2', text: 'Mais responsabilidade, projetos, aprofundamento e pensamento crítico.' },
+    { step: '03', title: 'Preparação', label: 'Ensino Médio', url: '/ensino-medio', text: 'Estratégias de estudo, simulados e preparação progressiva para o Ensino Superior.' }
   ],
   reasons: [
     { title: 'Acompanhamento próximo', text: 'Cada estudante é reconhecido em sua individualidade e acompanhado em seu desenvolvimento.' },
@@ -50,7 +50,7 @@ window.PERINI_CONTENT = {
     text: 'A trajetória da atual direção começou em 1987, com a Educação Infantil. À medida que os alunos cresceram, o Perini ampliou sua atuação para os Anos Iniciais, Anos Finais e Ensino Médio. A escola evoluiu em estrutura, tecnologia e proposta pedagógica sem abrir mão de sua essência: o olhar atento para cada estudante.'
   },
   coc: {
-    title: 'Tecnologia com intencionalidade pedagógica.',
+    title: 'Sistema COC a serviço da aprendizagem.',
     text: 'O Colégio Perini integra material didático, recursos digitais, avaliações, simulados e ferramentas de acompanhamento para tornar a aprendizagem mais dinâmica e fortalecer a autonomia do estudante.',
     items: [
       'Material didático atualizado e alinhado à BNCC',
@@ -59,6 +59,14 @@ window.PERINI_CONTENT = {
       'Recursos tecnológicos aplicados à aprendizagem',
       'Desenvolvimento de autonomia e hábitos de estudo'
     ]
+  },
+  cocVideo: {
+    kicker: 'Perini + Sistema COC',
+    title: 'Uma estrutura pedagógica que ganha sentido na rotina do Perini.',
+    text: 'O COC reúne material didático, recursos digitais, avaliações e simulados. No Perini, esses recursos são integrados ao trabalho de professores, aos projetos e ao acompanhamento de cada etapa.',
+    note: 'Assista ao vídeo institucional do COC para conhecer melhor o sistema que faz parte da proposta pedagógica da escola.',
+    videoLabel: 'Vídeo institucional',
+    videoTitle: 'Conheça o Sistema COC'
   },
   projects: [
     { category: 'Conhecimento e investigação', title: 'Feira Cultural e Científica', text: 'Pesquisa, investigação e projetos interdisciplinares que desenvolvem criatividade, comunicação e pensamento crítico.' },
@@ -71,7 +79,7 @@ window.PERINI_CONTENT = {
     { category: 'Cidadania e futuro', title: 'Projetos Solidários', text: 'Empatia, solidariedade, respeito e responsabilidade social conectados à comunidade.' }
   ],
   highSchool: {
-    title: 'A preparação começa antes do Terceirão.',
+    title: 'A preparação para o Ensino Superior começa no primeiro dia.',
     text: 'No Perini, a preparação para o Ensino Superior é construída ao longo dos três anos, com base consistente, avaliações, simulados, estratégias de estudo e acompanhamento constante.',
     phase1Text: 'Nos dois primeiros anos, os estudantes desenvolvem os conteúdos do Ensino Médio, realizam avaliações do Sistema COC e têm os primeiros contatos com simulados no formato ENEM, fortalecendo autonomia, organização e estratégias de estudo.',
     phase2Text: 'Na 3ª série, o foco está na revisão e no aprofundamento dos conteúdos, na resolução de questões e no aperfeiçoamento das estratégias de prova para o ENEM e os principais vestibulares.',
@@ -81,16 +89,16 @@ window.PERINI_CONTENT = {
     ]
   },
   teachers: {
-    title: 'Professores que inspiram, acolhem e transformam.',
-    text: 'Uma equipe qualificada, comprometida com a aprendizagem e em constante aperfeiçoamento, que une formação acadêmica, experiência, didática e sensibilidade para acompanhar cada estudante.',
+    title: 'Professores preparados para ensinar e acompanhar.',
+    text: 'Formação acadêmica, experiência, didática e aperfeiçoamento contínuo se unem a um olhar atento para as necessidades de cada estudante.',
     items: ['Formação contínua', 'Didática e planejamento', 'Acompanhamento próximo', 'Respeito e escuta']
   },
   family: {
-    text: 'A parceria com as famílias fortalece o desenvolvimento integral. No Perini, diálogo, confiança e acompanhamento caminham lado a lado.'
+    text: 'A educação é uma construção conjunta. O diálogo entre escola e responsáveis fortalece o acompanhamento do desenvolvimento de cada estudante.'
   },
   structure: {
-    title: 'Ambientes que apoiam a rotina de aprendizagem.',
-    text: 'A estrutura reúne espaços para estudo, experimentação, leitura, convivência e práticas esportivas.',
+    title: 'Espaços que fazem parte da aprendizagem e da convivência.',
+    text: 'Salas, laboratório de ciências, biblioteca e quadra poliesportiva apoiam diferentes momentos da rotina escolar.',
     items: [
       { title: 'Salas equipadas', text: 'Ambientes preparados para a rotina escolar e o desenvolvimento das aulas.' },
       { title: 'Laboratório de ciências', text: 'Um espaço dedicado à experimentação e à aprendizagem prática.' },
@@ -99,8 +107,8 @@ window.PERINI_CONTENT = {
     ]
   },
   finalCta: {
-    title: 'Venha conhecer o Perini de perto.',
-    text: 'Agende uma visita, conheça nossa proposta pedagógica, nossa equipe e os espaços da escola.'
+    title: 'A melhor forma de escolher uma escola é conhecê-la de perto.',
+    text: 'Veja os espaços, converse com nossa equipe e conte em que fase seu filho está.'
   },
   faq: [
     { question: 'Quais etapas de ensino o Colégio Perini oferece?', answer: 'O Colégio Perini atende o Ensino Fundamental I, do 1º ao 5º ano, o Ensino Fundamental II, do 6º ao 9º ano, e o Ensino Médio, da 1ª à 3ª série.' },

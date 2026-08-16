@@ -1,9 +1,19 @@
-COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — V3
+COLÉGIO PERINI — GUIA RÁPIDO DE EDIÇÃO — V3.4
 
-CONTATOS, WHATSAPP, TELEFONE, PORTAL E CAMPANHA
+CONTATOS, WHATSAPP, TELEFONE, PORTAL, CAMPANHA E VÍDEO COC
 Abra: js/config.js
 
-HOME — TEXTOS PRINCIPAIS, ETAPAS, PROJETOS, ENSINO MÉDIO E FAQ
+VÍDEO DO SISTEMA COC
+--------------------
+Procure por:
+media: {
+  cocVideoId: 'LLUYrDn4aXA',
+  cocVideoUrl: 'https://www.youtube.com/watch?v=LLUYrDn4aXA'
+}
+
+Para trocar o vídeo, altere o ID e a URL. Não precisa editar o HTML.
+
+HOME — TEXTOS PRINCIPAIS, ETAPAS, PROJETOS, ENSINO MÉDIO, DOBRA DO VÍDEO COC E FAQ
 Abra: js/content.js
 
 IMAGENS PRINCIPAIS
@@ -21,35 +31,11 @@ Estrutura: estrutura-e-vida-escolar/index.html
 Contato/agendamento: contato/index.html
 
 IMPORTANTE
-Telefone, WhatsApp, endereço, e-mail e Portal do Aluno NÃO devem ser repetidos manualmente nas páginas: esses dados são preenchidos por js/config.js.
-
-ATIVAR CAMPANHA NO TOPO
-Em js/config.js, altere:
-active: false
-para:
-active: true
+Telefone, WhatsApp, endereço, e-mail e Portal do Aluno NÃO devem ser repetidos manualmente nas páginas. Esses dados são preenchidos por js/config.js.
 
 PUBLICAR
-Envie a raiz desta pasta para o projeto Vercel.
-Não existe etapa de compilação.
+Envie a raiz desta pasta para a Vercel. Não existe etapa de compilação.
 A pasta docs/ e os arquivos internos de manutenção estão listados no .vercelignore para não irem ao deploy.
 
 ANTES DE PRODUÇÃO
-Suba primeiro como Preview e teste todas as rotas, formulário, WhatsApp, mapa e Portal do Aluno.
-
-FOTOS REAIS DA ESCOLA
----------------------
-As novas fotografias reais ficam em:
-assets/real/
-
-Mapa de uso principal:
-- direcao-historia.webp -> seção Nossa História na Home
-- teatro-palco.webp -> destaque visual de Projetos na Home
-- trabalho-de-campo.webp -> Projetos/Home e Ensino Médio
-- fundamental1-teatro-sombras.webp -> Projetos/Home e Fundamental I
-- vida-escolar-convivencia.webp -> Fundamental II e convivência (crop de produção sem sinalização histórica)
-- teatro-equipe.webp -> galeria Vida Escolar
-- teatro-bastidores.webp -> galeria Vida Escolar
-- direcao.webp -> página Contato/Agendamento
-
-Ao trocar uma fotografia, mantenha o mesmo nome do arquivo ou ajuste o caminho no HTML correspondente. Prefira WebP otimizado.
+Teste todas as rotas, formulário, WhatsApp, mapa, Portal do Aluno e o Play do vídeo COC. O link “Abrir o vídeo no YouTube” é o fallback caso a incorporação seja bloqueada pela plataforma.
