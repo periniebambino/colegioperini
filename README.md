@@ -28,5 +28,7 @@ Sem build. Publique a raiz do projeto na Vercel e valide todas as rotas no Previ
 - Fotografias reais e atuais de estrutura/professores/projetos para substituir ou ampliar o acervo.
 - Confirmação de Programa Bilíngue, Projeto de Vida formal e atividades fixas antes de qualquer publicação desses itens.
 
-## Fotografias reais — V3.1
-A V3.1 integra registros reais da escola em `assets/real/`, mantendo as imagens editoriais já existentes. O uso foi distribuído por função narrativa: história, projetos, ciclos, vida escolar e contato.
+## Fotografias reais — V3.2
+A V3.2 mantém os registros reais em `assets/real/` e as imagens editoriais já existentes. O uso é distribuído por função narrativa: história, projetos, ciclos, vida escolar e contato.
+
+A fotografia de convivência usada no Fundamental II possui um crop de produção que remove sinalização histórica da marca no topo da imagem, preservando o foco nos estudantes e evitando conflito com a identidade atual.

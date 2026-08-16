@@ -47,7 +47,7 @@ Mapa de uso principal:
 - teatro-palco.webp -> destaque visual de Projetos na Home
 - trabalho-de-campo.webp -> Projetos/Home e Ensino Médio
 - fundamental1-teatro-sombras.webp -> Projetos/Home e Fundamental I
-- vida-escolar-jogos.webp -> Fundamental II e Vida Escolar
+- vida-escolar-convivencia.webp -> Fundamental II e convivência (crop de produção sem sinalização histórica)
 - teatro-equipe.webp -> galeria Vida Escolar
 - teatro-bastidores.webp -> galeria Vida Escolar
 - direcao.webp -> página Contato/Agendamento

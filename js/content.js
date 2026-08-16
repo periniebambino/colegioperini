@@ -4,6 +4,18 @@ window.PERINI_CONTENT = {
     title: ['Aprender.', 'Pertencer.', 'Transformar.'],
     text: 'Uma escola em Carapicuíba que une excelência acadêmica, Sistema COC, acompanhamento próximo e experiências que ajudam cada aluno a crescer.'
   },
+  homeSections: {
+    essenceTitle: 'Cada aluno é conhecido, acompanhado e desafiado a avançar.',
+    essenceText: 'No Perini, excelência acadêmica, acolhimento e autonomia caminham juntos em cada etapa da trajetória.',
+    reasonsTitle: 'Desde 1987, proximidade também é método.',
+    reasonsText: 'A confiança aparece na rotina: acompanhamento próximo, Sistema COC, professores preparados, projetos e parceria com as famílias.',
+    contactTitle: 'Conheça o Perini de perto.',
+    contactText: 'Agende uma visita, conheça a proposta pedagógica e converse com a equipe sobre a etapa do seu filho.'
+  },
+  contactPage: {
+    title: 'Agende uma visita e conheça o Perini de perto.',
+    text: 'Informe os dados essenciais. Ao continuar, sua mensagem será organizada e aberta no WhatsApp da escola — sem cadastro ou armazenamento neste site.'
+  },
   proof: [
     { value: '1987', label: 'Uma trajetória construída ao lado das famílias.' },
     { value: 'COC', label: 'Conteúdo, tecnologia e acompanhamento pedagógico.' },
@@ -22,9 +34,9 @@ window.PERINI_CONTENT = {
     { id: 'ensino-medio', url: '/ensino-medio', imageKey: 'ensinoMedio', label: 'Ensino Médio', years: 'Da 1ª à 3ª série', headline: 'Preparação que começa desde o primeiro dia.', text: 'Base, avaliações, simulados e estratégias de estudo construídos ao longo dos três anos.' }
   ],
   journey: [
-    { step: '01', title: 'Base', label: 'Fundamental I', text: 'Curiosidade, confiança, hábitos e fundamentos para avançar.' },
-    { step: '02', title: 'Autonomia', label: 'Fundamental II', text: 'Responsabilidade, convivência, projetos e pensamento crítico.' },
-    { step: '03', title: 'Preparação', label: 'Ensino Médio', text: 'Estratégia de estudo, simulados, escolhas e preparação para o Ensino Superior.' }
+    { step: '01', title: 'Base', label: 'Fundamental I', url: '/fundamental-1', text: 'Curiosidade, confiança, hábitos e fundamentos para avançar.' },
+    { step: '02', title: 'Autonomia', label: 'Fundamental II', url: '/fundamental-2', text: 'Responsabilidade, convivência, projetos e pensamento crítico.' },
+    { step: '03', title: 'Preparação', label: 'Ensino Médio', url: '/ensino-medio', text: 'Estratégia de estudo, simulados, escolhas e preparação para o Ensino Superior.' }
   ],
   reasons: [
     { title: 'Acompanhamento próximo', text: 'Cada estudante é reconhecido em sua individualidade e acompanhado em seu desenvolvimento.' },

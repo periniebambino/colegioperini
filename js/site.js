@@ -19,6 +19,9 @@
   const visitHref = cfg.links.visitPath || '/contato/#agendar';
   const matriculaHref = whatsAppUrl(cfg.links.matriculaMessage);
   const defaultWhatsAppHref = whatsAppUrl('Olá! Conheci o Colégio Perini pelo site e gostaria de mais informações.');
+  const siteScript = document.querySelector('script[src$="js/site.js"]');
+  const projectBase = siteScript ? new URL('../', siteScript.src) : new URL('/', location.href);
+  const publicAsset = (path) => new URL(String(path || '').replace(/^\/+/, ''), projectBase).href;
 
   // Dados e links globais — uma única fonte para facilitar manutenção.
   setHref('[data-visit-link]', visitHref);
@@ -33,6 +36,35 @@
   setText('[data-whatsapp-text]', cfg.contact.whatsappDisplay);
   setText('[data-email-text]', cfg.contact.email);
   setText('[data-year]', String(new Date().getFullYear()));
+
+  // Copies estratégicas centralizadas sem transformar o HTML em renderização completa por JS.
+  if (content.homeSections) {
+    setText('[data-copy="essence-title"]', content.homeSections.essenceTitle);
+    setText('[data-copy="essence-text"]', content.homeSections.essenceText);
+    setText('[data-copy="reasons-title"]', content.homeSections.reasonsTitle);
+    setText('[data-copy="reasons-text"]', content.homeSections.reasonsText);
+    setText('[data-copy="contact-title"]', content.homeSections.contactTitle);
+    setText('[data-copy="contact-text"]', content.homeSections.contactText);
+  }
+  if (content.contactPage) {
+    setText('[data-contact-page-title]', content.contactPage.title);
+    setText('[data-contact-page-text]', content.contactPage.text);
+  }
+
+  // Fotografias reais importantes são controladas em images.js.
+  $$('[data-real-image]').forEach((el) => {
+    const item = images.real?.[el.dataset.realImage];
+    if (!item) return;
+    el.src = publicAsset(item.fallback);
+    if (item.srcset) {
+      el.srcset = item.srcset.split(',').map((part) => {
+        const [path, descriptor] = part.trim().split(/\s+/, 2);
+        return `${publicAsset(path)}${descriptor ? ` ${descriptor}` : ''}`;
+      }).join(', ');
+    }
+    if (item.width) el.width = item.width;
+    if (item.height) el.height = item.height;
+  });
 
   const logo = $('#brand-logo');
   if (logo) logo.src = images.logo;
@@ -89,7 +121,7 @@
 
   const journey = $('#journey-grid');
   if (journey && Array.isArray(content.journey)) {
-    journey.innerHTML = content.journey.map((item) => `<article class="journey-step" data-reveal><span>${item.step}</span><small>${item.label}</small><h3>${item.title}</h3><p>${item.text}</p></article>`).join('');
+    journey.innerHTML = content.journey.map((item) => `<article class="journey-step" data-reveal><span>${item.step}</span><small>${item.label}</small><h3>${item.title}</h3><p>${item.text}</p>${item.url ? `<a class="journey-link" href="${item.url}">Conheça esta etapa <span aria-hidden="true">→</span></a>` : ''}</article>`).join('');
   }
 
   const reasons = $('#reasons-grid');
@@ -183,6 +215,39 @@
       }
     });
   }
+
+  // Breadcrumb estruturado nas páginas internas.
+  const breadcrumbSchema = $('#breadcrumb-schema');
+  if (breadcrumbSchema && location.pathname !== '/') {
+    const labels = {
+      '/fundamental-1': 'Ensino Fundamental I',
+      '/fundamental-2': 'Ensino Fundamental II',
+      '/ensino-medio': 'Ensino Médio',
+      '/sistema-de-ensino': 'Sistema COC',
+      '/estrutura-e-vida-escolar': 'Estrutura e vida escolar',
+      '/contato': 'Contato e agendamento'
+    };
+    const path = location.pathname.replace(/\/$/, '') || '/';
+    const label = labels[path] || document.querySelector('h1')?.textContent?.trim() || 'Página';
+    breadcrumbSchema.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Início', item: cfg.school.baseUrl },
+        { '@type': 'ListItem', position: 2, name: label, item: `${cfg.school.baseUrl.replace(/\/$/, '')}${path}` }
+      ]
+    });
+  }
+
+  // Marca a rota atual para leitores de tela e navegação assistiva.
+  const currentPath = location.pathname.replace(/\/$/, '') || '/';
+  $$('a[href]').forEach((link) => {
+    try {
+      const url = new URL(link.href, location.href);
+      const linkPath = url.pathname.replace(/\/$/, '') || '/';
+      if (linkPath === currentPath && !url.hash && currentPath !== '/') link.setAttribute('aria-current', 'page');
+    } catch (_) {}
+  });
 
   // Campanha opcional.
   const campaign = $('#campaign-bar');
