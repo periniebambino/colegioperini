@@ -1,1 +1,1 @@
-window.PERINI_CONTENT={version:'v4.3-fotos-reais'};
+window.PERINI_CONTENT={version:'v4.8-pedagogica-coc'};

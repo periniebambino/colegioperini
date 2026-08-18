@@ -1,38 +1,32 @@
-# Colégio Perini — pacote pronto para subir (V4.4 Lapidação Milena)
+# Colégio Perini — V4.8 Pedagógica COC
 
-## O que foi feito nesta versão
-Versão lapidada após integração das fotos reais e revisão de direção de arte, UX, copy pública, assets e publicação.
-Esta versão integra as novas fotos reais da escola sem perder as imagens já aprovadas anteriormente.
+Versão lapidada sem recomeçar do zero. A base da V4.7 foi preservada e recebeu ajustes pedagógicos, institucionais e técnicos para evitar nomenclatura insegura, promessa não validada e leitura genérica sobre o Sistema COC.
 
-### Entradas novas organizadas no site
-- Feira das Nações / projeto interdisciplinar
-- Saída pedagógica no Animalia Park (2 grupos)
-- Laboratório / ciência (2 imagens)
-- Atividade artística com tinta nas mãos
-- Atividade com mapa gigante
-- Retrato institucional da liderança (2 imagens)
+## O que mudou
+- `Jornada completa` virou `Trajetória acompanhada`.
+- `Professoras próximas` virou `Equipe docente próxima`.
+- A seção COC passou a falar de material didático, plataforma, avaliação diagnóstica, simulados e BNCC.
+- Foi adicionada a frase de integração: `O COC organiza a jornada acadêmica. O Perini acompanha o aluno de perto.`
+- Os números fixos de simulados foram suavizados para `conforme calendário pedagógico`, até validação oficial da escola.
+- O Ensino Médio passou a usar o título `Preparação desde a 1ª série do Ensino Médio.`
+- As legendas dos projetos ganharam leitura pedagógica: pesquisa, oralidade, investigação, autoria, cidadania e repertório.
+- O `404.html` foi substituído por uma página simples e segura, sem cópia antiga.
 
 ## Como publicar
-Suba **todos os arquivos desta pasta** para GitHub/Vercel. Não suba somente o `index.html`.
+Suba todos os arquivos desta pasta para GitHub/Vercel. Não suba somente o `index.html`.
 
 ## Arquivos principais
-- `index.html`: site estático final, com conteúdo renderizado direto no HTML.
-- `css/perini.css`: design system, responsividade e novas seções de galeria.
+- `index.html`: site estático final.
+- `css/perini.css`: design system e responsividade.
 - `js/site.js`: menu mobile e ano automático.
 - `assets/`: imagens otimizadas e marca.
-- `assets/reais/novas/`: novas fotos reais integradas nesta atualização.
+- `docs/QA-V4.8.md`: checagem da versão.
+- `docs/DECISIONS-V4.8.md`: decisões pedagógicas aplicadas.
 
-## Estrutura de uso das fotos
-- **Hero**: fachada e posicionamento institucional.
-- **Etapas de ensino**: imagens editoriais aprovadas para representar cada ciclo.
-- **Projetos e vivências**: teatro, Feira das Nações, arte e equipe.
-- **Vida escolar real**: convivência, Animalia Park, trabalho de campo, palco e mapa gigante.
-- **Ensino Médio em destaque**: ciência/laboratório + trabalho de campo.
-- **Direção e equipe**: fotos institucionais da liderança.
-
-## Validações finais antes de publicar
+## Validações finais antes da publicação oficial
 - autorização de uso das fotos com alunos;
 - telefone / WhatsApp / e-mail / endereço;
 - link do Portal do Aluno;
 - uso da marca COC;
-- se teatro / dança / música são atividades fixas ou vivências / projetos.
+- calendário oficial de avaliações e simulados adotado pelo Perini;
+- se cultura, movimento, teatro e apresentações são vivências recorrentes ou projetos pontuais.

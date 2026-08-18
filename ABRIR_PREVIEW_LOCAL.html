@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Colégio Perini | Escola Particular em Carapicuíba</title>
-  <meta name="description" content="Conheça o Colégio Perini, escola particular em Carapicuíba com Sistema COC, Ensino Fundamental, Ensino Médio, projetos pedagógicos e acompanhamento próximo.">
+  <meta name="description" content="Conheça o Colégio Perini, escola particular em Carapicuíba com Sistema COC, Ensino Fundamental, Ensino Médio, projetos pedagógicos, avaliações, simulados e acompanhamento próximo.">
   <meta name="theme-color" content="#082f63">
   <link rel="canonical" href="https://colegio-perini.vercel.app/">
   <meta property="og:title" content="Colégio Perini | Aprender. Pertencer. Transformar.">
-  <meta property="og:description" content="Educação com excelência acadêmica, acolhimento, projetos reais e formação humana em Carapicuíba.">
+  <meta property="og:description" content="Educação com Sistema COC, acompanhamento pedagógico, projetos reais e formação humana em Carapicuíba.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://colegio-perini.vercel.app/">
   <meta property="og:image" content="https://colegio-perini.vercel.app/assets/social/og-perini.webp">
@@ -61,7 +61,43 @@
 @media(max-width:1120px){.real-mosaic{grid-template-columns:1fr 1fr}.gallery-wall,.leadership-grid{grid-template-columns:1fr}.gallery-card.large{grid-row:auto;min-height:420px}.leadership-photos{grid-template-columns:1fr 1fr}.hs-grid-updated{grid-template-columns:1fr;grid-template-areas:"image" "panel"}.hs-grid-updated .hs-image{min-height:520px}}
 @media(max-width:720px){.real-mosaic,.gallery-wall,.hs-mini-gallery,.leadership-photos{grid-template-columns:1fr}.gallery-card,.gallery-card.large{min-height:260px}.gallery-card.large{grid-row:auto}.leadership-photos .media-card{min-height:280px}.hs-grid-updated .hs-image{min-height:340px}}
 
-</style>
+/* V4.6 designer refinement */
+.coc-refined{background:linear-gradient(180deg,#eef5fa 0%,#f6fbff 100%)}
+.coc-grid-refined{grid-template-columns:.92fr 1.08fr;gap:clamp(1.4rem,3.2vw,3rem);align-items:center}
+.coc-media-card{position:relative;min-height:460px;border-radius:34px;overflow:hidden;background:#dde8f4;box-shadow:var(--shadow-sm)}
+.coc-media-card img{width:100%;height:100%;object-fit:cover;object-position:center}
+.coc-media-card figcaption{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(255,255,255,.94);border:1px solid rgba(8,47,99,.08);border-radius:22px;padding:1rem 1.1rem;box-shadow:var(--shadow-sm)}
+.coc-media-card figcaption strong{display:block;color:var(--ink);font-size:1rem;line-height:1.12;margin-bottom:.28rem}
+.coc-media-card figcaption span{display:block;color:var(--muted);font-size:.92rem;line-height:1.4}
+.coc-panel{max-width:600px}
+.coc-panel h2{font-size:clamp(2rem,3.25vw,3.4rem);line-height:.98;max-width:12ch;margin-bottom:1rem}
+.coc-panel p{max-width:58ch;color:#4f6a84}
+.coc-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.4rem 0 1.5rem}
+.coc-feature-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1rem 1rem 1.05rem;box-shadow:0 8px 22px rgba(8,47,99,.05)}
+.coc-feature-card strong{display:block;color:var(--ink);font-size:1rem;line-height:1.15;margin-bottom:.38rem}
+.coc-feature-card span{display:block;color:var(--muted);font-size:.92rem;line-height:1.38}
+.coc-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+@media(max-width:1120px){.coc-grid-refined{grid-template-columns:1fr}.coc-grid-refined .coc-panel{order:1}.coc-grid-refined .coc-media-card{order:2;min-height:380px}.coc-feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.coc-panel h2{font-size:clamp(1.8rem,9vw,2.5rem);max-width:none}.coc-feature-grid{grid-template-columns:1fr}.coc-actions{display:grid}.coc-actions .btn{width:100%}.coc-media-card{min-height:320px;border-radius:28px}.coc-media-card figcaption{position:relative;left:auto;right:auto;bottom:auto;margin:-22px 12px 12px}}
+
+/* V4.7 autoria geral: architecture, nomenclature and contextual photos */
+body{overflow-x:hidden}.section{padding:clamp(3.8rem,5.8vw,6.1rem) 0}h2{font-size:clamp(1.95rem,3.2vw,3.35rem)}.section-head{max-width:820px}.proof-item strong{font-size:clamp(1.15rem,1.9vw,1.9rem);line-height:1.08}.v47-essence{background:linear-gradient(180deg,#fff,#f8fbff)}.essence-autoral-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(1.5rem,3vw,2.8rem);align-items:end}.essence-intro{max-width:690px}.essence-intro h2{font-size:clamp(2rem,3.2vw,3.45rem);max-width:780px}.essence-autoral-grid .essence-copy{grid-template-columns:1fr;gap:.9rem}.essence-autoral-grid .essence-card{display:grid;grid-template-columns:52px 1fr;column-gap:1rem;align-items:start}.essence-autoral-grid .essence-card span{grid-row:1/3}.essence-autoral-grid .essence-card h3{margin-bottom:.25rem}.stage-copy small{font-size:.78rem;line-height:1.32}.stage-copy .years{color:var(--blue-800);font-size:1.08rem}.stage-copy h3{font-size:clamp(1.65rem,2.35vw,2.65rem);line-height:1.02}.journey-section h2{font-size:clamp(2rem,3vw,3.3rem)}
+/* refined COC */
+.coc-refined{background:linear-gradient(180deg,#eef5fa 0%,#f8fcff 100%)}.coc-grid-refined{grid-template-columns:.92fr 1.08fr;gap:clamp(1.4rem,3.2vw,3rem);align-items:center}.coc-media-card{position:relative;min-height:430px;border-radius:34px;overflow:hidden;background:#dde8f4;box-shadow:var(--shadow-sm)}.coc-media-card img{width:100%;height:100%;object-fit:cover;object-position:center}.coc-media-card figcaption{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(255,255,255,.95);border:1px solid rgba(8,47,99,.08);border-radius:22px;padding:1rem 1.1rem;box-shadow:var(--shadow-sm)}.coc-media-card figcaption strong{display:block;color:var(--ink);font-size:1rem;line-height:1.12;margin-bottom:.28rem}.coc-media-card figcaption span{display:block;color:var(--muted);font-size:.92rem;line-height:1.4}.coc-panel{max-width:620px}.coc-panel h2{font-size:clamp(1.95rem,3vw,3.25rem);line-height:1;max-width:14ch;margin-bottom:1rem}.coc-panel p{max-width:58ch;color:#4f6a84}.coc-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.4rem 0 1.5rem}.coc-feature-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1rem 1rem 1.05rem;box-shadow:0 8px 22px rgba(8,47,99,.05)}.coc-feature-card strong{display:block;color:var(--ink);font-size:1rem;line-height:1.15;margin-bottom:.38rem}.coc-feature-card span{display:block;color:var(--muted);font-size:.92rem;line-height:1.38}.coc-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+/* unified project story */
+.projects-unified{background:#fff}.projects-story-grid{display:grid;grid-template-columns:1.02fr .98fr .98fr;gap:1rem;align-items:stretch}.project-feature-v47{grid-row:span 2;min-height:520px;justify-content:center}.project-groups-v47{display:grid;gap:.55rem;margin:1.2rem 0 1.4rem}.project-groups-v47 span{background:var(--surface-blue);border:1px solid rgba(8,47,99,.08);border-radius:999px;padding:.64rem .85rem;font-weight:850;color:var(--ink);font-size:.92rem}.photo-story-card{position:relative;margin:0;min-height:260px;border-radius:28px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow-sm)}.photo-story-card.main{min-height:520px}.photo-story-card img{width:100%;height:100%;object-fit:cover}.photo-story-card figcaption,.media-card figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(255,255,255,.94);border:1px solid rgba(8,47,99,.08);border-radius:18px;padding:.85rem 1rem;box-shadow:var(--shadow-sm)}.photo-story-card figcaption strong,.media-card figcaption strong{display:block;color:var(--ink);font-size:1rem;line-height:1.12;margin-bottom:.25rem}.photo-story-card figcaption span,.media-card figcaption span{display:block;color:var(--muted);font-size:.9rem;line-height:1.35}.photo-story-card:nth-of-type(3) img{object-position:center 40%}.photo-story-card:nth-of-type(4) img{object-position:center 55%}
+/* high school */
+.hs-grid-updated{grid-template-columns:.82fr 1.18fr;grid-template-areas:"image panel";gap:1.4rem}.hs-grid-updated .hs-image{position:relative;min-height:760px}.hs-grid-updated .hs-image img{object-position:center 45%}.context-caption{position:absolute!important}.hs-panel h2{font-size:clamp(2rem,3.05vw,3.25rem);line-height:1}.hs-mini-gallery{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin:1rem 0 1.2rem}.hs-mini-gallery figure{position:relative;margin:0;overflow:hidden;border-radius:22px;background:var(--surface);box-shadow:var(--shadow-sm);min-height:220px}.hs-mini-gallery img{width:100%;height:100%;object-fit:cover}.hs-mini-gallery figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(255,255,255,.94);border-radius:14px;padding:.7rem .8rem;font-size:.88rem;font-weight:900;color:var(--ink)}
+/* leadership, structure and family */
+.leadership-grid-v47{display:grid;grid-template-columns:.9fr .7fr .7fr;gap:1rem;align-items:center}.leadership-main,.leadership-side{position:relative;min-height:460px}.leadership-main img,.leadership-side img{width:100%;height:100%;object-fit:cover}.leadership-main img{object-position:center}.leadership-side img{object-position:center top}.structure-grid-v47{display:grid;grid-template-columns:.88fr 1.12fr;gap:clamp(1.4rem,3vw,2.5rem);align-items:start}.structure-gallery-v47{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.structure-gallery-v47 .media-card{position:relative;min-height:285px}.structure-gallery-v47 .main{grid-column:1/-1;min-height:360px}.structure-gallery-v47 img{width:100%;height:100%;object-fit:cover}.family-section{background:linear-gradient(180deg,#fff,#f4f9fd)}.family-grid-v47{display:grid;grid-template-columns:.75fr 1fr;gap:2rem;align-items:center}.family-grid-v47 .family-photo{position:relative;height:500px}.family-content{max-width:680px}.family-content h2{font-size:clamp(2rem,3.1vw,3.4rem)}
+@media(max-width:1120px){.essence-autoral-grid,.coc-grid-refined,.projects-story-grid,.hs-grid-updated,.leadership-grid-v47,.structure-grid-v47,.family-grid-v47{grid-template-columns:1fr}.hs-grid-updated{grid-template-areas:"panel" "image"}.project-feature-v47{grid-row:auto;min-height:auto}.photo-story-card.main{min-height:420px}.leadership-main,.leadership-side{min-height:360px}.coc-grid-refined .coc-panel{order:1}.coc-grid-refined .coc-media-card{order:2;min-height:360px}.structure-gallery-v47{grid-template-columns:1fr 1fr}.proof-item strong{font-size:1.4rem}}
+@media(max-width:720px){h2{font-size:clamp(1.78rem,8.2vw,2.5rem)}.section{padding:3.25rem 0}.proof-grid{grid-template-columns:1fr}.essence-autoral-grid .essence-card{grid-template-columns:42px 1fr;padding:1.15rem}.coc-panel h2,.hs-panel h2{max-width:none;font-size:clamp(1.8rem,8.3vw,2.45rem)}.coc-feature-grid,.coc-actions,.hs-mini-gallery,.structure-gallery-v47{grid-template-columns:1fr}.coc-actions{display:grid}.coc-actions .btn{width:100%}.coc-media-card{min-height:300px;border-radius:28px}.coc-media-card figcaption,.photo-story-card figcaption,.media-card figcaption{position:relative;left:auto;right:auto;bottom:auto;margin:-20px 12px 12px}.photo-story-card,.photo-story-card.main{min-height:265px}.projects-story-grid{gap:.85rem}.hs-grid-updated{grid-template-areas:"panel" "image"}.hs-grid-updated .hs-image{min-height:330px}.leadership-grid-v47{gap:.85rem}.leadership-main,.leadership-side,.structure-gallery-v47 .media-card,.structure-gallery-v47 .main{min-height:260px}.family-grid-v47 .family-photo{height:auto;min-height:280px}.family-content{order:-1}.proof-item strong{font-size:1.2rem}.stage-copy small{font-size:.76rem}.stage-copy h3{font-size:clamp(1.55rem,7vw,2.1rem)}}
+
+/* V4.8 lapidação pedagógica COC */
+.coc-role{margin:.9rem 0 0;color:var(--ink);font-size:1.02rem;line-height:1.35;background:rgba(255,255,255,.72);border-left:4px solid var(--orange);border-radius:16px;padding:.85rem 1rem}.coc-role strong{font-weight:900}.hs-stats-safe .hs-stat strong{font-size:1.42rem;letter-spacing:.02em}.hs-stats-safe .hs-stat span{line-height:1.25}.project-feature-v47 p{color:#4f6a84}.photo-story-card figcaption span{max-width:32ch}.stage-copy li{line-height:1.35}
+@media(max-width:720px){.coc-role{font-size:.96rem}.hs-stats-safe .hs-stat strong{font-size:1.25rem}.photo-story-card figcaption span,.media-card figcaption span{max-width:none}}
+
+  </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Colégio Perini","address":{"@type":"PostalAddress","streetAddress":"R. Adão Gonçalves da Costa, 127","addressLocality":"Carapicuíba","addressRegion":"SP","postalCode":"06321-040","addressCountry":"BR"},"telephone":"+55 11 4164-5073","email":"escolabambino@gmail.com"}</script>
 </head>
 <body>
@@ -87,8 +123,8 @@
     <nav>
       <a class="mobile-link" href="#perini">O Perini</a>
       <a class="mobile-link" href="#ensino">Ensino</a>
-      <a class="mobile-link sub" href="#fundamental-1">Fundamental I</a>
-      <a class="mobile-link sub" href="#fundamental-2">Fundamental II</a>
+      <a class="mobile-link sub" href="#fundamental-1">Anos Iniciais</a>
+      <a class="mobile-link sub" href="#fundamental-2">Anos Finais</a>
       <a class="mobile-link sub" href="#ensino-medio">Ensino Médio</a>
       <a class="mobile-link" href="#coc">Sistema COC</a>
       <a class="mobile-link" href="#projetos">Projetos</a>
@@ -115,8 +151,8 @@
           </div>
           <div class="hero-trust">
             <div class="trust-mini"><strong>1987</strong><span>História com famílias da região</span></div>
-            <div class="trust-mini"><strong>COC</strong><span>Sistema de ensino parceiro</span></div>
-            <div class="trust-mini"><strong>1º ao EM</strong><span>Do Fundamental ao Ensino Médio</span></div>
+            <div class="trust-mini"><strong>COC</strong><span>Material e avaliações</span></div>
+            <div class="trust-mini"><strong>Trajetória acompanhada</strong><span>Do Ensino Fundamental ao Ensino Médio</span></div>
           </div>
         </div>
         <div class="hero-media">
@@ -132,20 +168,19 @@
     <section class="proof">
       <div class="container proof-grid">
         <div class="proof-item"><strong>Desde 1987</strong><span>História, presença e confiança local.</span></div>
-        <div class="proof-item"><strong>Fund. I ao EM</strong><span>Jornada escolar acompanhada de perto.</span></div>
-        <div class="proof-item"><strong>COC</strong><span>Material, plataforma, avaliações e simulados.</span></div>
+        <div class="proof-item"><strong>Ensino Fundamental ao Ensino Médio</strong><span>Jornada escolar acompanhada de perto.</span></div>
+        <div class="proof-item"><strong>Sistema COC</strong><span>Material, plataforma, avaliações e simulados.</span></div>
         <div class="proof-item"><strong>Projetos reais</strong><span>Cultura, ciência, cidadania e mundo real.</span></div>
       </div>
     </section>
 
-    <section id="perini" class="section v4-essence">
-      <div class="container essence-layout">
-        <div>
+    <section id="perini" class="section v47-essence">
+      <div class="container essence-autoral-grid">
+        <div class="essence-intro">
           <span class="kicker">Nossa essência</span>
-          <h2>Uma jornada feita de conhecimento, vínculo e propósito.</h2>
+          <h2>Uma escola conduzida com presença, história e olhar atento para cada estudante.</h2>
           <p>O Perini valoriza aprendizagem, pertencimento e formação humana. Cada estudante é acolhido em sua individualidade e incentivado a desenvolver seu potencial.</p>
         </div>
-        <figure class="media-card essence-photo"><img src="assets/reais/colegio-perini-direcao.webp" alt="Direção do Colégio Perini em registro institucional" width="1086" height="1448" loading="lazy"></figure>
         <div class="essence-copy">
           <article class="essence-card"><span>01</span><h3>Aprender</h3><p>Ensino de qualidade, professores preparados, Sistema COC e metodologia atual.</p></article>
           <article class="essence-card"><span>02</span><h3>Pertencer</h3><p>Uma escola acolhedora, onde cada aluno é conhecido pelo nome.</p></article>
@@ -159,38 +194,38 @@
         <div class="section-head">
           <span class="kicker">Etapas de ensino</span>
           <h2>Cada fase tem um jeito de aprender.</h2>
-          <p>Da base ao vestibular, a proposta amadurece com o aluno sem perder acolhimento, acompanhamento e identidade Perini.</p>
+          <p>Do 1º ano do Ensino Fundamental à 3ª série do Ensino Médio, a proposta amadurece com o aluno sem perder acolhimento, acompanhamento e identidade Perini.</p>
         </div>
         <div class="stages-grid">
           <article id="fundamental-1" class="stage-card">
-            <div class="stage-media"><picture><source media="(max-width:720px)" srcset="assets/ensino/fundamental-1-mobile.webp"><img src="assets/ensino/fundamental-1.webp" alt="Criança do Ensino Fundamental I em atividade de aprendizagem no Colégio Perini" width="1200" height="750" loading="lazy"></picture></div>
+            <div class="stage-media"><picture><source media="(max-width:720px)" srcset="assets/ensino/fundamental-1-mobile.webp"><img src="assets/ensino/fundamental-1.webp" alt="Criança do Ensino Fundamental — Anos Iniciais em atividade de aprendizagem no Colégio Perini" width="1200" height="750" loading="lazy"></picture></div>
             <div class="stage-copy">
-              <small>Ensino Fundamental I</small>
-              <div class="years">Do 1º ao 5º ano</div>
+              <small>Ensino Fundamental — Anos Iniciais</small>
+              <div class="years">1º ao 5º ano</div>
               <h3>A base que dá segurança para aprender.</h3>
               <p>Leitura, escrita, raciocínio, autonomia e vínculo aparecem em uma rotina que acolhe, organiza e fortalece a aprendizagem.</p>
               <ul>
-                <li>Professoras próximas e rotina acompanhada</li>
+                <li>Equipe docente próxima e rotina acompanhada</li>
                 <li>Alfabetização, leitura e construção de base</li>
-                <li>Projetos que tornam o aprender mais significativo</li>
+                <li>Projetos que dão contexto à leitura, escrita e pesquisa</li>
               </ul>
-              <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Ensino%20Fundamental%20I%20do%20Colégio%20Perini." target="_blank" rel="noopener">Fale sobre o Fundamental I</a>
+              <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Ensino%20Fundamental%20—%20Anos%20Iniciais%20do%20Colégio%20Perini." target="_blank" rel="noopener">Fale sobre os Anos Iniciais</a>
             </div>
           </article>
 
           <article id="fundamental-2" class="stage-card">
-            <div class="stage-media"><picture><source media="(max-width:720px)" srcset="assets/ensino/fundamental-2-mobile.webp"><img src="assets/ensino/fundamental-2.webp" alt="Alunos do Ensino Fundamental II em atividade no Colégio Perini" width="1200" height="750" loading="lazy"></picture></div>
+            <div class="stage-media"><picture><source media="(max-width:720px)" srcset="assets/ensino/fundamental-2-mobile.webp"><img src="assets/ensino/fundamental-2.webp" alt="Alunos do Ensino Fundamental — Anos Finais em atividade no Colégio Perini" width="1200" height="750" loading="lazy"></picture></div>
             <div class="stage-copy">
-              <small>Ensino Fundamental II</small>
-              <div class="years">Do 6º ao 9º ano</div>
-              <h3>Mais autonomia, repertório e protagonismo.</h3>
+              <small>Ensino Fundamental — Anos Finais</small>
+              <div class="years">6º ao 9º ano</div>
+              <h3>Mais autonomia, repertório e acompanhamento.</h3>
               <p>É a etapa em que o aluno amplia responsabilidade, repertório e participação em projetos, sempre com orientação e escuta.</p>
               <ul>
                 <li>Transição acompanhada da infância para a adolescência</li>
                 <li>Projetos, pesquisa e participação ativa</li>
                 <li>Vínculo com professores e rotina de estudo</li>
               </ul>
-              <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Ensino%20Fundamental%20II%20do%20Colégio%20Perini." target="_blank" rel="noopener">Fale sobre o Fundamental II</a>
+              <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Ensino%20Fundamental%20—%20Anos%20Finais%20do%20Colégio%20Perini." target="_blank" rel="noopener">Fale sobre os Anos Finais</a>
             </div>
           </article>
 
@@ -199,12 +234,12 @@
             <div class="stage-copy">
               <small>Ensino Médio</small>
               <div class="years">1ª à 3ª série</div>
-              <h3>Base, estratégia e preparação para o futuro.</h3>
-              <p>O Ensino Médio une aprofundamento acadêmico, rotina de estudos, simulados e projetos que preparam o aluno para vestibulares, ENEM e escolhas de futuro.</p>
+              <h3>Preparação desde a 1ª série do Ensino Médio.</h3>
+              <p>Desde a 1ª série do Ensino Médio, o aluno constrói base, autonomia, rotina de estudo e estratégias para avançar com segurança até a 3ª série do Ensino Médio, vestibulares e ENEM.</p>
               <ul>
-                <li>Conteúdo estruturado com Sistema COC</li>
-                <li>Simulados, acompanhamento e amadurecimento acadêmico</li>
-                <li>Experiências que conectam escola, mundo real e projeto de vida</li>
+                <li>Material didático estruturado com Sistema COC</li>
+                <li>Avaliações, simulados e acompanhamento pedagógico</li>
+                <li>Experiências que conectam ciência, cultura, mundo real e escolhas de futuro</li>
               </ul>
               <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Ensino%20Médio%20do%20Colégio%20Perini." target="_blank" rel="noopener">Fale sobre o Ensino Médio</a>
             </div>
@@ -213,116 +248,104 @@
       </div>
     </section>
 
-    <section class="section dark">
+    <section class="section dark journey-section">
       <div class="container journey-grid">
         <div>
           <span class="kicker">Jornada Perini</span>
-          <h2>Da infância ao vestibular, com acompanhamento de verdade.</h2>
-          <p>O aluno cresce, amadurece e amplia seus desafios sem perder vínculo, identidade e apoio.</p>
+          <h2>Do 1º ano do Ensino Fundamental à 3ª série do Ensino Médio.</h2>
+          <p>O Perini acompanha cada etapa com cuidado, método e propósito. O aluno cresce, amplia desafios e amadurece sem perder vínculo, identidade e apoio.</p>
         </div>
         <div class="journey-steps">
           <article class="journey-step"><span>01</span><p>Base forte de alfabetização, leitura, escrita e raciocínio.</p></article>
           <article class="journey-step"><span>02</span><p>Autonomia, organização da rotina e ampliação do repertório.</p></article>
           <article class="journey-step"><span>03</span><p>Projetos, pesquisa, cultura e mundo real na formação.</p></article>
-          <article class="journey-step"><span>04</span><p>Preparação acadêmica para vestibulares e próximos passos.</p></article>
+          <article class="journey-step"><span>04</span><p>Preparação acadêmica para vestibulares, ENEM e próximos passos.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="coc" class="section surface-blue">
-      <div class="container coc-grid">
-        <figure class="media-card large"><img src="assets/hero/jornada-perini.webp" alt="Material e recursos do Sistema COC utilizados no Colégio Perini" width="1200" height="900" loading="lazy"></figure>
-        <div>
+    <section id="coc" class="section surface-blue coc-refined">
+      <div class="container coc-grid coc-grid-refined">
+        <figure class="media-card coc-media-card">
+          <img src="assets/hero/jornada-perini.webp" alt="Alunos do Colégio Perini utilizando materiais e recursos do Sistema COC" width="1200" height="900" loading="lazy">
+          <figcaption><strong>Sistema COC no dia a dia</strong><span>Material didático, recursos digitais e avaliação para acompanhar a aprendizagem.</span></figcaption>
+        </figure>
+        <div class="coc-panel">
           <span class="kicker">Sistema COC no dia a dia</span>
-          <h2>Material estruturado, plataforma e avaliações para estudar melhor.</h2>
-          <p>O Perini conta com o Sistema COC para apoiar a rotina escolar com organização, conteúdo, avaliações e acompanhamento acadêmico.</p>
-          <ul class="coc-list">
-            <li>Material didático e planejamento por etapa</li>
-            <li>Plataforma digital e recursos de estudo</li>
-            <li>Avaliações e simulados</li>
-            <li>Suporte para o desenvolvimento acadêmico</li>
-          </ul>
-          <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20entender%20melhor%20como%20funciona%20o%20Sistema%20COC%20no%20Colégio%20Perini." target="_blank" rel="noopener">Entenda o COC no Perini</a>
+          <h2>Sistema COC com material didático, plataforma e avaliação diagnóstica.</h2>
+          <p>No Colégio Perini, o Sistema COC apoia a rotina escolar com material didático estruturado, recursos digitais, avaliações e simulados que ajudam professores, alunos e famílias a acompanhar a evolução da aprendizagem.</p>
+          <p class="coc-role"><strong>O COC organiza a jornada acadêmica. O Perini acompanha o aluno de perto.</strong></p>
+          <div class="coc-feature-grid">
+            <article class="coc-feature-card"><strong>Material por etapa</strong><span>Conteúdo organizado por etapa, com progressão pedagógica e alinhamento à BNCC.</span></article>
+            <article class="coc-feature-card"><strong>Plataforma digital</strong><span>Recursos digitais para apoiar estudo, revisão, prática e acompanhamento.</span></article>
+            <article class="coc-feature-card"><strong>Avaliações e simulados</strong><span>Instrumentos para diagnóstico, acompanhamento e tomada de decisão pedagógica.</span></article>
+            <article class="coc-feature-card"><strong>Acompanhamento acadêmico</strong><span>O COC organiza a jornada acadêmica. O Perini acompanha o aluno de perto.</span></article>
+          </div>
+          <div class="coc-actions">
+            <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20entender%20melhor%20como%20funciona%20o%20Sistema%20COC%20no%20Colégio%20Perini." target="_blank" rel="noopener">Entenda o COC no Perini</a>
+            <a class="btn btn-secondary" href="#contato">Agende uma visita</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projetos" class="section">
+    <section id="projetos" class="section projects-unified">
       <div class="container">
         <div class="section-head">
           <span class="kicker">Projetos e vivências</span>
-          <h2>Conhecimento vivido, pesquisado, apresentado e compartilhado.</h2>
-          <p>As vivências desenvolvem comunicação, criatividade, pensamento crítico, colaboração e cidadania.</p>
+          <h2>A escola acontecendo de verdade.</h2>
+          <p>Mais do que mostrar estrutura, as vivências revelam como os alunos aprendem, convivem, pesquisam e constroem repertório no dia a dia.</p>
         </div>
-        <div class="projects-editorial">
-          <figure class="media-card project-main"><img src="assets/reais/colegio-perini-grupo-teatro.webp" alt="Grupo de alunos do Colégio Perini em apresentação teatral" width="1254" height="1254" loading="lazy"></figure>
-          <article class="project-feature">
+        <div class="projects-story-grid">
+          <article class="project-feature project-feature-v47">
             <span class="kicker">Aprender além da aula</span>
             <h3>Projetos que colocam o aluno em ação.</h3>
-            <p>No Perini, o conteúdo ganha vida em experiências que integram arte, ciência, cultura, cidadania e trabalho colaborativo.</p>
+            <p>No Perini, o conteúdo ganha vida em experiências que desenvolvem pesquisa, oralidade, investigação, autoria, colaboração, cidadania e contato com o mundo real.</p>
+            <div class="project-groups-v47">
+              <span>Cultura e expressão</span>
+              <span>Ciência e tecnologia</span>
+              <span>Cidadania e solidariedade</span>
+              <span>Mundo real e saídas pedagógicas</span>
+            </div>
             <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20conhecer%20os%20projetos%20e%20vivências%20do%20Colégio%20Perini." target="_blank" rel="noopener">Conheça os projetos</a>
           </article>
-          <div class="real-mosaic">
-            <figure><img src="assets/reais/colegio-perini-teatro-fundamental-card.webp" alt="Alunos do Ensino Fundamental I em atividade de teatro no Colégio Perini" width="900" height="650" loading="lazy"><figcaption>Expressão e criatividade</figcaption></figure>
-            <figure><img src="assets/reais/novas/feira-das-nacoes.webp" alt="Alunos e equipe do Colégio Perini em projeto Feira das Nações" width="1448" height="1086" loading="lazy"><figcaption>Projetos interdisciplinares</figcaption></figure>
-            <figure><img src="assets/reais/novas/arte-maos.webp" alt="Mãos de alunos com tinta azul em atividade artística no Colégio Perini" width="1086" height="1448" loading="lazy"><figcaption>Arte e autoria</figcaption></figure>
-            <figure><img src="assets/reais/colegio-perini-equipe-evento-card.webp" alt="Equipe do Colégio Perini em atividade cultural com alunos" width="900" height="650" loading="lazy"><figcaption>Equipe presente</figcaption></figure>
-          </div>
-          <div class="project-groups">
-            <article class="project-group"><strong>Cultura e expressão</strong><span>Teatro</span><span>Cultura e movimento</span><span>Apresentações</span></article>
-            <article class="project-group"><strong>Ciência e tecnologia</strong><span>Feira Cultural e Científica</span><span>Circuito do Conhecimento</span><span>Pesquisa</span></article>
-            <article class="project-group"><strong>Cidadania e solidariedade</strong><span>Sustentabilidade</span><span>Projetos solidários</span><span>Responsabilidade social</span></article>
-            <article class="project-group"><strong>Profissões e mundo real</strong><span>Profissões em Foco</span><span>Trabalho de campo</span><span>Escolhas de futuro</span></article>
-          </div>
+          <figure class="photo-story-card main"><img src="assets/reais/colegio-perini-grupo-teatro.webp" alt="Grupo de alunos do Colégio Perini em apresentação teatral" width="1254" height="1254" loading="lazy"><figcaption><strong>Apresentações culturais</strong><span>Comunicação, expressão corporal, confiança e trabalho coletivo.</span></figcaption></figure>
+          <figure class="photo-story-card"><img src="assets/reais/novas/feira-das-nacoes.webp" alt="Alunos e equipe do Colégio Perini em projeto Feira das Nações" width="1448" height="1086" loading="lazy"><figcaption><strong>Feira das Nações</strong><span>História, geografia, cultura, pesquisa e apresentação oral em projeto interdisciplinar.</span></figcaption></figure>
+          <figure class="photo-story-card"><img src="assets/reais/novas/mapa-gigante.webp" alt="Alunos do Colégio Perini em atividade com mapa gigante" width="1086" height="1448" loading="lazy"><figcaption><strong>Atividade com mapa gigante</strong><span>Leitura espacial, investigação, análise de território e participação ativa.</span></figcaption></figure>
+          <figure class="photo-story-card"><img src="assets/reais/novas/arte-maos.webp" alt="Mãos de alunos com tinta azul em atividade artística no Colégio Perini" width="1086" height="1448" loading="lazy"><figcaption><strong>Arte e autoria</strong><span>Experimentação artística, autoria, sensibilidade e colaboração.</span></figcaption></figure>
+          <figure class="photo-story-card"><img src="assets/reais/novas/animalia-grupo-misto.webp" alt="Grupo misto de alunos do Colégio Perini em saída pedagógica no Animalia Park" width="1600" height="900" loading="lazy"><figcaption><strong>Saídas pedagógicas</strong><span>Observação, convivência e repertório em experiências fora da sala de aula.</span></figcaption></figure>
+          <figure class="photo-story-card"><img src="assets/reais/colegio-perini-teatro-fundamental-card.webp" alt="Alunos dos Anos Iniciais em atividade de teatro no Colégio Perini" width="900" height="650" loading="lazy"><figcaption><strong>Teatro na formação</strong><span>Oralidade, expressão corporal, confiança e desenvolvimento social.</span></figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="section surface" id="vivencias-reais">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Vida escolar real</span>
-          <h2>Vivências que fortalecem vínculo, repertório e pertencimento.</h2>
-          <p>Além das aulas, a rotina escolar reúne convivência, saídas pedagógicas, cultura, ciência e momentos que fortalecem o vínculo dos alunos com a escola.</p>
-        </div>
-        <div class="gallery-wall">
-          <figure class="gallery-card large"><img src="assets/reais/novas/animalia-grupo-misto.webp" alt="Grupo misto de alunos do Colégio Perini em saída pedagógica no Animalia Park" width="1600" height="900" loading="lazy"><figcaption><strong>Saídas pedagógicas e pertencimento</strong><span>Experiências fora da sala que ampliam repertório e fortalecem o grupo.</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/reais/novas/animalia-grupo.webp" alt="Grupo de alunos do Colégio Perini em visita ao Animalia Park" width="1600" height="900" loading="lazy"><figcaption><strong>Convivência</strong><span>Relações, amizade e memória afetiva da vida escolar.</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/reais/novas/mapa-gigante.webp" alt="Alunos do Colégio Perini em atividade com mapa gigante" width="1086" height="1448" loading="lazy"><figcaption><strong>Aprender na prática</strong><span>Projetos que conectam teoria, pesquisa e participação ativa.</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/reais/colegio-perini-convivencia-card.webp" alt="Alunos do Colégio Perini em momento de convivência escolar" width="900" height="650" loading="lazy"><figcaption><strong>Vida escolar</strong><span>Espaços e momentos que ajudam o aluno a pertencer.</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/reais/colegio-perini-teatro-palco-card.webp" alt="Alunos do Colégio Perini em apresentação no palco" width="900" height="650" loading="lazy"><figcaption><strong>Cultura no palco</strong><span>Expressão, comunicação e desenvolvimento humano.</span></figcaption></figure>
-          <figure class="gallery-card"><img src="assets/reais/colegio-perini-trabalho-de-campo-card.webp" alt="Alunos do Colégio Perini em trabalho de campo no Fórum de Barueri" width="900" height="650" loading="lazy"><figcaption><strong>Mundo real</strong><span>Conhecimento que encontra contexto, cidadania e futuro.</span></figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="em-destaque">
+    <section class="section surface" aria-labelledby="em-destaque">
       <div class="container hs-grid hs-grid-updated">
-        <figure class="media-card hs-image"><img src="assets/reais/novas/ciencia-laboratorio.webp" alt="Alunos do Colégio Perini em prática de laboratório" width="941" height="1672" loading="lazy"></figure>
+        <figure class="media-card hs-image"><img src="assets/reais/novas/ciencia-laboratorio.webp" alt="Alunos do Colégio Perini em prática de laboratório" width="941" height="1672" loading="lazy"><figcaption class="context-caption"><strong>Laboratório e investigação</strong><span>Observação, hipótese, experimento e registro aproximam o conteúdo da prática.</span></figcaption></figure>
         <div class="panel hs-panel">
           <span class="kicker">Ensino Médio em destaque</span>
-          <h2 id="em-destaque">Preparação que começa antes do Terceirão.</h2>
-          <p>No Ensino Médio, o aluno constrói base, autonomia e estratégias de estudo desde a 1ª série, com acompanhamento, avaliações, projetos e experiências que fazem o conteúdo ganhar sentido.</p>
+          <h2 id="em-destaque">Preparação desde a 1ª série do Ensino Médio.</h2>
+          <p>Desde a 1ª série do Ensino Médio, o aluno constrói base, autonomia, rotina de estudo e estratégias para avançar com segurança até a 3ª série do Ensino Médio, vestibulares e ENEM.</p>
           <div class="hs-phases">
-            <article class="hs-phase"><span>1ª e 2ª séries</span><h3>Construção da base</h3><p>Conteúdos do Ensino Médio, avaliações COC, amadurecimento acadêmico e primeiros simulados no formato ENEM.</p></article>
-            <article class="hs-phase"><span>3ª série · Terceirão</span><h3>Revisão e aprofundamento</h3><p>Resolução de questões, estratégias de prova e acompanhamento para vestibulares e ENEM.</p></article>
+            <article class="hs-phase"><span>1ª e 2ª séries</span><h3>Construção da base</h3><p>Conteúdos do Ensino Médio, avaliações, acompanhamento pedagógico e construção progressiva da rotina de estudo.</p></article>
+            <article class="hs-phase"><span>3ª série do Ensino Médio</span><h3>Revisão e aprofundamento</h3><p>Revisão, resolução de questões, simulados conforme calendário pedagógico e estratégias para vestibulares e ENEM.</p></article>
           </div>
-          <div class="hs-stats"><div class="hs-stat"><strong>5</strong><span>Simulados ENEM</span></div><div class="hs-stat"><strong>4</strong><span>Simulados COC</span></div></div>
+          <div class="hs-stats hs-stats-safe"><div class="hs-stat"><strong>ENEM</strong><span>Simulados conforme calendário pedagógico</span></div><div class="hs-stat"><strong>COC</strong><span>Avaliações e simulados de acompanhamento</span></div></div>
           <div class="hs-mini-gallery">
-            <figure><img src="assets/reais/novas/ciencia-detalhe.webp" alt="Experimento com tubos de ensaio em laboratório escolar" width="941" height="1672" loading="lazy"><figcaption>Investigação e prática</figcaption></figure>
-            <figure><img src="assets/reais/colegio-perini-trabalho-de-campo.webp" alt="Alunos do Colégio Perini em trabalho de campo no Fórum de Barueri" width="1254" height="1254" loading="lazy"><figcaption>Projeto de vida e mundo real</figcaption></figure>
+            <figure><img src="assets/reais/novas/ciencia-detalhe.webp" alt="Experimento com tubos de ensaio em laboratório escolar" width="941" height="1672" loading="lazy"><figcaption>Experimento e registro</figcaption></figure>
+            <figure><img src="assets/reais/colegio-perini-trabalho-de-campo.webp" alt="Alunos do Colégio Perini em trabalho de campo no Fórum de Barueri" width="1254" height="1254" loading="lazy"><figcaption>Mundo real e cidadania</figcaption></figure>
           </div>
           <a class="btn btn-secondary" href="https://wa.me/5511983668260?text=Olá!%20Gostaria%20de%20informações%20sobre%20o%20Ensino%20Médio%20do%20Colégio%20Perini." target="_blank" rel="noopener">Conheça o Ensino Médio</a>
         </div>
       </div>
     </section>
 
-    <section class="section surface-blue">
-      <div class="container leadership-grid">
+    <section class="section surface-blue leadership-section">
+      <div class="container leadership-grid-v47">
         <div>
           <span class="kicker">Direção e equipe</span>
-          <h2>Uma equipe presente, acolhedora e comprometida com cada etapa.</h2>
-          <p>O Perini combina tradição, proximidade e acompanhamento próximo. A direção, os professores e a equipe escolar participam ativamente da rotina e do desenvolvimento dos estudantes.</p>
+          <h2>Direção presente e equipe próxima.</h2>
+          <p>A presença da equipe no cotidiano escolar ajuda a manter diálogo, organização e acompanhamento em cada etapa.</p>
           <ul class="teacher-items">
             <li>Formação contínua</li>
             <li>Didática e planejamento</li>
@@ -330,23 +353,16 @@
             <li>Escuta e parceria com a família</li>
           </ul>
         </div>
-        <div class="leadership-photos">
-          <figure class="media-card"><img src="assets/reais/novas/diretora-escritorio.webp" alt="Diretora do Colégio Perini em ambiente administrativo" width="1254" height="1254" loading="lazy"></figure>
-          <figure class="media-card"><img src="assets/reais/novas/lideranca-dupla.webp" alt="Equipe de liderança do Colégio Perini em retrato institucional" width="1086" height="1448" loading="lazy"></figure>
-        </div>
+        <figure class="media-card leadership-main"><img src="assets/reais/novas/diretora-escritorio.webp" alt="Diretora do Colégio Perini em ambiente administrativo" width="1254" height="1254" loading="lazy"><figcaption><strong>Tradição também é presença diária.</strong><span>Gestão, rotina e cuidado na condução da escola.</span></figcaption></figure>
+        <figure class="media-card leadership-side"><img src="assets/reais/novas/lideranca-dupla.webp" alt="Equipe de liderança do Colégio Perini em retrato institucional" width="1086" height="1448" loading="lazy"><figcaption><strong>História e proximidade</strong><span>Uma escola feita por pessoas presentes.</span></figcaption></figure>
       </div>
     </section>
 
-    <section id="estrutura" class="section">
-      <div class="container structure-grid">
-        <div class="structure-gallery">
-          <figure class="media-card main"><img src="assets/estrutura/fachada-perini.webp" alt="Fachada do Colégio Perini" width="1200" height="750" loading="lazy"></figure>
-          <figure class="media-card"><img src="assets/reais/colegio-perini-convivencia-card.webp" alt="Alunos do Colégio Perini em momento de convivência escolar" width="900" height="650" loading="lazy"></figure>
-          <figure class="media-card"><img src="assets/reais/colegio-perini-grupo-teatro-card.webp" alt="Grupo de alunos do Colégio Perini em apresentação teatral" width="900" height="650" loading="lazy"></figure>
-        </div>
+    <section id="estrutura" class="section structure-v47">
+      <div class="container structure-grid-v47">
         <div class="structure-copy">
           <span class="kicker">Estrutura e vida escolar</span>
-          <h2>Ambientes reais para aprender, conviver e crescer.</h2>
+          <h2>Ambientes e vivências reais para aprender, conviver e crescer.</h2>
           <p>A estrutura da escola aparece na rotina: salas, convivência, projetos, recepção das famílias e momentos que ajudam o aluno a pertencer.</p>
           <ul>
             <li>Fachada e atendimento</li>
@@ -358,19 +374,23 @@
           </ul>
           <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Conheci%20o%20Colégio%20Perini%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener">Agende uma visita</a>
         </div>
+        <div class="structure-gallery-v47">
+          <figure class="media-card main"><img src="assets/reais/colegio-perini-convivencia-card.webp" alt="Alunos do Colégio Perini em momento de convivência escolar" width="900" height="650" loading="lazy"><figcaption><strong>Convivência escolar</strong><span>Espaços e momentos que ajudam o aluno a pertencer.</span></figcaption></figure>
+          <figure class="media-card"><img src="assets/reais/novas/animalia-grupo.webp" alt="Grupo de alunos do Colégio Perini em visita ao Animalia Park" width="1600" height="900" loading="lazy"><figcaption><strong>Experiências externas</strong><span>Vivências que ficam na memória.</span></figcaption></figure>
+          <figure class="media-card"><img src="assets/reais/colegio-perini-equipe-evento-card.webp" alt="Equipe do Colégio Perini em atividade cultural com alunos" width="900" height="650" loading="lazy"><figcaption><strong>Equipe envolvida</strong><span>Participação que fortalece a experiência escolar.</span></figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <section class="section surface">
-      <div class="container family-inner">
-        <figure class="media-card family-photo"><img src="assets/reais/colegio-perini-direcao.webp" alt="Direção do Colégio Perini em registro institucional" width="1086" height="1448" loading="lazy"></figure>
-        <div>
+    <section class="section family-section">
+      <div class="container family-grid-v47">
+        <figure class="media-card family-photo"><img src="assets/reais/colegio-perini-direcao.webp" alt="Direção do Colégio Perini em registro institucional" width="1086" height="1448" loading="lazy"><figcaption><strong>Família e escola no mesmo caminho.</strong><span>Acompanhamento próximo, diálogo e parceria no desenvolvimento de cada aluno.</span></figcaption></figure>
+        <div class="family-content">
           <span class="kicker">Família + escola</span>
-          <h2>Família e escola no mesmo caminho.</h2>
-          <p>Acompanhamento próximo, diálogo e parceria fortalecem o desenvolvimento de cada aluno. No Perini, a relação com as famílias faz parte da proposta, e não apenas do atendimento.</p>
+          <h2>Conhecido pelo nome. Acompanhado de verdade.</h2>
+          <p>A relação com as famílias faz parte da proposta do Perini. O diálogo ajuda a manter o acompanhamento próximo e fortalece a confiança em cada etapa da vida escolar.</p>
           <a class="btn btn-primary" href="https://wa.me/5511983668260?text=Olá!%20Conheci%20o%20Colégio%20Perini%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener">Agende uma visita</a>
         </div>
-        <div class="family-quote"><strong>Conhecido pelo nome. Acompanhado de verdade.</strong><p>Uma escola onde aluno, família e educadores caminham juntos, com escuta, presença e consistência no dia a dia.</p></div>
       </div>
     </section>
 
@@ -406,9 +426,9 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div><img class="footer-logo" src="assets/brand/logo-colegio-perini-cropped.webp" alt="Colégio Perini"><p>Educação com excelência acadêmica, acolhimento e formação humana em Carapicuíba.</p></div>
+        <div><img class="footer-logo" src="assets/brand/logo-colegio-perini-cropped.webp" alt="Colégio Perini"><p>Educação com acolhimento, acompanhamento pedagógico e formação humana em Carapicuíba.</p></div>
         <div><h3>O Perini</h3><a href="#perini">Nossa essência</a><a href="#projetos">Projetos</a><a href="#estrutura">Estrutura</a></div>
-        <div><h3>Ensino</h3><a href="#fundamental-1">Fundamental I</a><a href="#fundamental-2">Fundamental II</a><a href="#ensino-medio">Ensino Médio</a><a href="#coc">Sistema COC</a></div>
+        <div><h3>Ensino</h3><a href="#fundamental-1">Anos Iniciais</a><a href="#fundamental-2">Anos Finais</a><a href="#ensino-medio">Ensino Médio</a><a href="#coc">Sistema COC</a></div>
         <div><h3>Contato</h3><a href="https://wa.me/5511983668260?text=Olá!%20Conheci%20o%20Colégio%20Perini%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita." target="_blank" rel="noopener">WhatsApp</a><a href="tel:+551141645073">Telefone</a><a href="https://portal.coc.com.br/" target="_blank" rel="noopener">Portal do Aluno</a></div>
       </div>
       <div class="footer-bottom"><span>© <span id="year">2026</span> Colégio Perini.</span><span>Site institucional do Colégio Perini.</span></div>
@@ -428,6 +448,6 @@
   const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
 })();
 
-</script>
+  </script>
 </body>
 </html>

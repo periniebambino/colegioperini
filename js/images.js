@@ -1,25 +1,17 @@
 window.PERINI_IMAGES={
-  brand:{
-    logo:'assets/brand/logo-colegio-perini-cropped.webp'
-  },
-  hero:{
-    desktop:'assets/hero/fachada-perini-desktop.webp',
-    mobile:'assets/hero/fachada-perini-mobile.webp',
-    jornada:'assets/hero/jornada-perini.webp'
-  },
+  brand:{logo:'assets/brand/logo-colegio-perini-cropped.webp'},
+  hero:{desktop:'assets/hero/fachada-perini-desktop.webp',mobile:'assets/hero/fachada-perini-mobile.webp'},
   ensino:{
-    fundamental1:'assets/ensino/fundamental-1.webp',
-    fundamental2:'assets/ensino/fundamental-2.webp',
+    anosIniciais:'assets/ensino/fundamental-1.webp',
+    anosFinais:'assets/ensino/fundamental-2.webp',
     ensinoMedio:'assets/ensino/ensino-medio.webp'
   },
   reais:{
     direcao:'assets/reais/colegio-perini-direcao.webp',
-    diretora:'assets/reais/colegio-perini-diretora.webp',
-    teatroPalco:'assets/reais/colegio-perini-teatro-palco.webp',
-    teatroFundamental:'assets/reais/colegio-perini-teatro-fundamental.webp',
     grupoTeatro:'assets/reais/colegio-perini-grupo-teatro.webp',
-    equipeEvento:'assets/reais/colegio-perini-equipe-evento.webp',
-    convivencia:'assets/reais/colegio-perini-convivencia.webp',
+    teatroAnosIniciais:'assets/reais/colegio-perini-teatro-fundamental-card.webp',
+    convivencia:'assets/reais/colegio-perini-convivencia-card.webp',
+    equipeEvento:'assets/reais/colegio-perini-equipe-evento-card.webp',
     trabalhoCampo:'assets/reais/colegio-perini-trabalho-de-campo.webp',
     feiraNacoes:'assets/reais/novas/feira-das-nacoes.webp',
     animaliaGrupo:'assets/reais/novas/animalia-grupo.webp',
@@ -28,7 +20,7 @@ window.PERINI_IMAGES={
     cienciaDetalhe:'assets/reais/novas/ciencia-detalhe.webp',
     arteMaos:'assets/reais/novas/arte-maos.webp',
     mapaGigante:'assets/reais/novas/mapa-gigante.webp',
-    liderancaDupla:'assets/reais/novas/lideranca-dupla.webp',
-    diretoraEscritorio:'assets/reais/novas/diretora-escritorio.webp'
+    diretoraEscritorio:'assets/reais/novas/diretora-escritorio.webp',
+    liderancaDupla:'assets/reais/novas/lideranca-dupla.webp'
   }
 };
