@@ -1,41 +1,38 @@
-# Colégio Perini — Production Final para GitHub Pages
+# Colégio Perini — pacote pronto para subir (V4.4 Lapidação Milena)
 
-Site institucional/comercial estático, responsivo e multipágina do Colégio Perini.
+## O que foi feito nesta versão
+Versão lapidada após integração das fotos reais e revisão de direção de arte, UX, copy pública, assets e publicação.
+Esta versão integra as novas fotos reais da escola sem perder as imagens já aprovadas anteriormente.
 
-## URL de produção
-https://periniebambino.github.io/colegioperini/
+### Entradas novas organizadas no site
+- Feira das Nações / projeto interdisciplinar
+- Saída pedagógica no Animalia Park (2 grupos)
+- Laboratório / ciência (2 imagens)
+- Atividade artística com tinta nas mãos
+- Atividade com mapa gigante
+- Retrato institucional da liderança (2 imagens)
 
-## Rotas
-- `/colegioperini/`
-- `/colegioperini/fundamental-1/`
-- `/colegioperini/fundamental-2/`
-- `/colegioperini/ensino-medio/`
-- `/colegioperini/sistema-de-ensino/`
-- `/colegioperini/estrutura-e-vida-escolar/`
-- `/colegioperini/contato/`
+## Como publicar
+Suba **todos os arquivos desta pasta** para GitHub/Vercel. Não suba somente o `index.html`.
 
-A navegação foi preparada para funcionar em GitHub Pages dentro da subpasta `/colegioperini/`, evitando os 404 causados por links absolutos de raiz.
+## Arquivos principais
+- `index.html`: site estático final, com conteúdo renderizado direto no HTML.
+- `css/perini.css`: design system, responsividade e novas seções de galeria.
+- `js/site.js`: menu mobile e ano automático.
+- `assets/`: imagens otimizadas e marca.
+- `assets/reais/novas/`: novas fotos reais integradas nesta atualização.
 
-## Conversão
-Os CTAs “Agende uma visita” abrem diretamente o WhatsApp oficial do Colégio Perini com mensagem pronta. A página `/contato/` continua disponível para quem quiser preencher os dados da visita antes de abrir o WhatsApp.
+## Estrutura de uso das fotos
+- **Hero**: fachada e posicionamento institucional.
+- **Etapas de ensino**: imagens editoriais aprovadas para representar cada ciclo.
+- **Projetos e vivências**: teatro, Feira das Nações, arte e equipe.
+- **Vida escolar real**: convivência, Animalia Park, trabalho de campo, palco e mapa gigante.
+- **Ensino Médio em destaque**: ciência/laboratório + trabalho de campo.
+- **Direção e equipe**: fotos institucionais da liderança.
 
-## Imagens
-As artes antigas de Fundamental I e Fundamental II com texto incorporado foram substituídas, no site, por versões editoriais limpas: fotografia sem painel lateral, headline, ícones ou card embutidos. O HTML/CSS fica responsável por títulos e CTAs.
-
-## Sistema COC
-O player do vídeo é carregado sob demanda: o iframe do YouTube só é criado após o clique em Play. Há fallback para abrir o vídeo diretamente no YouTube.
-
-## Onde editar
-- contatos, WhatsApp, Portal e vídeo COC: `js/config.js`
-- textos compartilhados: `js/content.js`
-- imagens principais: `js/images.js`
-- identidade visual: `css/tokens.css`
-- páginas internas: `*/index.html`
-
-## Publicação no GitHub Pages
-1. Extraia o ZIP.
-2. Envie o conteúdo extraído para a raiz do repositório `periniebambino/colegioperini`.
-3. Mantenha `.nojekyll` na raiz.
-4. Em Settings > Pages, publique a branch do projeto a partir de `/(root)`.
-
-Não existe etapa de build.
+## Validações finais antes de publicar
+- autorização de uso das fotos com alunos;
+- telefone / WhatsApp / e-mail / endereço;
+- link do Portal do Aluno;
+- uso da marca COC;
+- se teatro / dança / música são atividades fixas ou vivências / projetos.

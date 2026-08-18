@@ -1,38 +1,11 @@
-window.PERINI_CONFIG = {
-  school: {
-    name: 'Colégio Perini',
-    city: 'Carapicuíba',
-    state: 'SP',
-    since: '1987',
-    baseUrl: 'https://periniebambino.github.io/colegioperini/'
+window.PERINI_CONFIG={
+  "contact": {
+    "whatsappHref": "https://wa.me/5511983668260?text=Olá!%20Conheci%20o%20Colégio%20Perini%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20visita.",
+    "phoneHref": "tel:+551141645073",
+    "emailHref": "mailto:escolabambino@gmail.com",
+    "mapsHref": "https://www.google.com/maps/search/?api=1&query=R.+Adão+Gonçalves+da+Costa,+127,+Carapicuíba,+SP"
   },
-  contact: {
-    address: 'R. Adão Gonçalves da Costa, 127 — Jardim Jussara — Carapicuíba/SP — 06321-040',
-    phoneDisplay: '(11) 4164-5073',
-    phoneHref: 'tel:+551141645073',
-    whatsappDisplay: '(11) 98366-8260',
-    whatsappNumber: '5511983668260',
-    email: 'escolabambino@gmail.com',
-    emailHref: 'mailto:escolabambino@gmail.com',
-    mapsHref: 'https://www.google.com/maps/search/?api=1&query=R.%20Ad%C3%A3o%20Gon%C3%A7alves%20da%20Costa%2C%20127%2C%20Carapicu%C3%ADba%2C%20SP',
-    mapsEmbed: 'https://www.google.com/maps?q=R.%20Ad%C3%A3o%20Gon%C3%A7alves%20da%20Costa%2C%20127%2C%20Carapicu%C3%ADba%2C%20SP&output=embed'
-  },
-  links: {
-    portalAluno: 'https://portal.coc.com.br/',
-    instagram: '',
-    matriculaMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de receber informações sobre matrículas.',
-    visitMessage: 'Olá! Conheci o Colégio Perini pelo site e gostaria de agendar uma visita.',
-    visitPath: '/contato/#agendar'
-  },
-  media: {
-    cocVideoId: 'LLUYrDn4aXA',
-    cocVideoUrl: 'https://www.youtube.com/watch?v=LLUYrDn4aXA',
-    cocEmbedBase: 'https://www.youtube-nocookie.com/embed/'
-  },
-  campaign: {
-    active: false,
-    label: 'Matrículas abertas',
-    text: 'Venha conhecer o Colégio Perini.',
-    message: 'Olá! Gostaria de receber informações sobre matrículas no Colégio Perini.'
+  "links": {
+    "portalAluno": "https://portal.coc.com.br/"
   }
 };

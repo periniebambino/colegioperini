@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://periniebambino.github.io/colegioperini/sitemap.xml
+Sitemap: https://colegio-perini.vercel.app/sitemap.xml

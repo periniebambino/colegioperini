@@ -1,52 +1,16 @@
-# Registro de decisões
+# Decisões V4.2
 
-## D001 — 1987 como marco institucional
-O documento da Coordenação passa a ser a referência prioritária quando houver conflito com o site antigo.
+D001 — Index estático.
+Motivo: evitar tela quebrada se JavaScript falhar ou demorar.
 
-## D002 — Eixo de marca
-Aprender. Pertencer. Transformar.
+D002 — CSS único de produção.
+Motivo: reduzir risco de caminho faltando e facilitar homologação.
 
-## D003 — Conversão
-Agendamento de visita é o CTA principal; WhatsApp é o canal prioritário de contato.
+D003 — Fotos reais são prova.
+Motivo: mostrar escola viva e reduzir aparência genérica.
 
-## D004 — Editabilidade
-Dados operacionais ficam em `js/config.js`; textos em `js/content.js`; caminhos de imagens em `js/images.js`.
+D004 — Imagens editoriais permanecem nos ciclos.
+Motivo: representam visualmente cada etapa sem poluir a Home.
 
-## D005 — Informações não confirmadas
-Programa Bilíngue, Projeto de Vida formal e atividades fixas de artes/esportes permanecem fora da versão principal até validação.
-
-## D006 — Fechamento de produção v1.2
-A versão de produção usa apenas informações consolidadas. A seção de estrutura utiliza somente ambientes já divulgados publicamente pela escola. O mapa conceitual foi substituído por mapa real incorporado.
-
-## D007 — CTA mobile
-O CTA fixo no celular aparece somente depois que o CTA principal do hero deixa a área visível, evitando duplicidade e obstrução da primeira dobra.
-
-## D008 — Pacote público enxuto
-Arquivos de trabalho, PNGs pesados e o documento interno da Coordenação não integram o ZIP de produção.
-
-## D009 — Preservação das URLs já publicadas
-As rotas `/fundamental-1`, `/fundamental-2`, `/ensino-medio`, `/sistema-de-ensino`, `/estrutura-e-vida-escolar` e `/contato` passam a integrar a V3. Embora páginas individuais aparecessem como evolução futura no comando inicial, a bancada elevou esta decisão por existir arquitetura pública prévia nessas URLs e por seu valor de navegação e SEO.
-
-## D010 — Home + páginas de aprofundamento
-A Home permanece como apresentação institucional e comercial. Páginas internas aprofundam intenção específica de busca e de decisão sem duplicar integralmente a Home.
-
-## D011 — Agendamento qualificado sem backend
-O CTA `Agende uma visita` leva para `/contato#agendar`. O formulário organiza os dados e abre o WhatsApp; nenhum dado é persistido pelo site.
-
-## D012 — WhatsApp como ação secundária forte
-WhatsApp permanece visível no hero, páginas internas, contato e CTA flutuante, mas não substitui o fluxo de agendamento qualificado.
-
-## D013 — Não reintroduzir conteúdo sem validação
-Informações do site anterior sobre 1980, Pearson, Programa Bilíngue, Projeto de Vida formal e atividades fixas não retornam à V3 sem confirmação institucional.
-
-## D013 — Imagens editoriais existentes permanecem
-**Decisão:** as imagens produzidas para hero e ciclos continuam no projeto.
-**Motivo:** elas entregam consistência de branding e leitura imediata de cada etapa. As fotos reais entram como prova de autenticidade e vida escolar, não como substituição indiscriminada.
-
-## D014 — Fotografias reais entram onde comprovam a narrativa
-**Decisão:** usar fotos reais em História, Projetos, páginas dos ciclos, Vida Escolar e Contato.
-**Motivo:** aumentar confiança e evidência sem transformar o site em uma galeria desorganizada.
-
-## D015 — Fotos reais otimizadas para web
-**Decisão:** manter originais fora do pacote público e publicar versões WebP responsivas em `assets/real/`.
-**Motivo:** preservar qualidade visual com melhor performance.
+D005 — CTA principal: Agende uma visita.
+Motivo: conversão qualificada para pais e responsáveis.
